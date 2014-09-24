@@ -56,7 +56,11 @@ int main(void){
     bg = al_load_bitmap("img/sp1.jpg");
 
     SpaceShip nave_jugador;
-    Enemy enemies[10];
+    Enemy enemies1[10];
+    Enemy enemies2[10];
+    Enemy enemies3[10];
+    Enemy enemies4[10];
+    Enemy jefe1[10];
     Bullet bullets[5];
 
 
@@ -66,7 +70,11 @@ int main(void){
     // INICIALIZAR OBJETOS====================
     InitShip(nave_jugador);
     InitBullet(bullets, NUM_BULLETS);
-    InitEnemies(enemies,NUM_ENEMIES);
+    InitEnemies(enemies1,ENM1,10,0,220,WIDTH/2);
+    InitEnemies(enemies2,ENM2,8,50,180,WIDTH/2+100);
+    InitEnemies(enemies3,ENM3,6,100,140,WIDTH);
+    InitEnemies(enemies4,ENM4,4,150,100,(WIDTH/2)+100);
+    InitEnemies(jefe1,JEFE,2,200,60);
     //DrawEnemies(enemies,NUM_ENEMIES);
 
 	//==============================================
@@ -83,6 +91,7 @@ int main(void){
     //AnimacionEntrada(enemies,NUM_ENEMIES);
     printf("ya");
     int animacion=1;
+    int movimientos=0;
 	while(!done){
 
 		ALLEGRO_EVENT ev;
@@ -158,7 +167,11 @@ int main(void){
 
             UpdateBullet(bullets, NUM_BULLETS);
 
-            CollideBullet(bullets,NUM_BULLETS,enemies,NUM_ENEMIES);
+            CollideBullet(bullets,NUM_BULLETS,enemies1,NUM_ENEMIES);
+            CollideBullet(bullets,NUM_BULLETS,enemies2,8);
+            CollideBullet(bullets,NUM_BULLETS,enemies3,6);
+            CollideBullet(bullets,NUM_BULLETS,enemies4,4);
+            CollideBullet(bullets,NUM_BULLETS,jefe1,2);
 		}
 
 		//==============================================
@@ -167,10 +180,16 @@ int main(void){
 		if(render && al_is_event_queue_empty(event_queue))
 		{
 			if (animacion==1){
-                animacion=0;
                 printf("si primero");
-                AnimacionEntrada(enemies,NUM_ENEMIES);
+                AnimacionEntrada(enemies1,10);
+                AnimacionEntrada(enemies2, 8);
+                AnimacionEntrada(enemies3,6);
+                AnimacionEntrada(enemies4,4);
+                AnimacionEntrada(jefe1,2);
+                animacion=0;
+                movimientos=1;
 			}
+
 
 			render = false;
 
@@ -180,7 +199,11 @@ int main(void){
 			DrawBullet(bullets, NUM_BULLETS);
 
             // Dibuja los enemigos.
-            DrawEnemies(enemies,NUM_ENEMIES);
+            DrawEnemies(enemies1,10);
+            DrawEnemies(enemies2,8);
+            DrawEnemies(enemies3,6);
+            DrawEnemies(enemies4,4);
+            DrawEnemies(jefe1,2);
 
 
 
@@ -189,6 +212,11 @@ int main(void){
 
 			al_flip_display();
 			al_clear_to_color(al_map_rgb(0,0,0));
+			if (movimientos){
+                movimientos=0;
+                movCuadrado(enemies1,10);
+                movCirc(enemies2,8);
+			}
 		}
 
 	}
@@ -196,7 +224,7 @@ int main(void){
 
     for (int i =0;i<10;i++)
 
-    al_destroy_bitmap(enemies[i].image);
+    al_destroy_bitmap(enemies1[i].image);
 
 	al_destroy_event_queue(event_queue);
 	al_destroy_timer(timer);
