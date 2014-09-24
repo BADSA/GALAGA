@@ -60,7 +60,7 @@ void DrawEnemies(Enemy *enemies, int size){
             al_draw_bitmap(enemies[i].image, enemies[i].x, enemies[i].y, 0);
 }
 
-void *moverEnemigo (void *arguments){
+void *animacionEntrada (void *arguments){
     Enemy *e =(Enemy *) arguments;
     int direc=false;
     if (e->x < e->x_fin){
@@ -86,11 +86,22 @@ void *moverEnemigo (void *arguments){
     }
     pthread_exit(NULL);
 }
-void *trayecCirc (void *arguments){
+void *movTriang (void *arguments){
     sleep(2);
     Enemy *e =(Enemy *) arguments;
-    //printf(" %d , %d , random %d \n", e->y , e->y_fin,r);
-    //double x,y;
+    while (e->live){
+        int ran = rand();
+        for (double t = 0; t < 2*(3.14159265); t += 0.01) {
+            usleep(10000+ran%10000);
+            e->x =(int)( 75*cos(t) + e->x_fin);
+            e->y =(int) (75*sin(t) + e->y_fin);
+        }
+    }
+    pthread_exit(NULL);
+}
+void *movCirc (void *arguments){
+    sleep(2);
+    Enemy *e =(Enemy *) arguments;
     while (e->live){
         int ran = rand();
         for (double t = 0; t < 2*(3.14159265); t += 0.01) {
@@ -102,12 +113,10 @@ void *trayecCirc (void *arguments){
     pthread_exit(NULL);
 }
 
-void *trayecCuadrado (void *arguments){
+void *movCuadrado (void *arguments){
     sleep(2);
     Enemy *e =(Enemy *) arguments;
-    //printf(" %d , %d , random %d \n", e->y , e->y_fin,r);
     while (e->live){
-        //printf("Esta vivo\n");
         int ran = rand();
         if(e->ID<6){
             for (int i=e->x_fin; i<e->x_fin+150; i+=e->speed){e->x=i;usleep(10000+ran%10000);}; //e->x=i;
@@ -125,46 +134,19 @@ void *trayecCuadrado (void *arguments){
     pthread_exit(NULL);
 }
 
-void movCuadrado(Enemy *enemies, int size){
 
-     printf(" Solo una vez \n");
-     srand(time(NULL));
+void movEnemies(Enemy *enemies, int size,int numMov){
+    srand(time(NULL));
     pthread_t h[size];
-    for( int i = 0 ; i < size/2 ; i++){
-        pthread_create (&h[i], NULL, trayecCuadrado, (void *) &enemies[i] );
-    }
-    for( int i = size/2 ; i < size; i++){
-        pthread_create (&h[i], NULL, trayecCuadrado, (void *) &enemies[i] );
-    }
-}
-
-void movCirc(Enemy *enemies, int size){
-
-     printf(" Solo una vez \n");
-     srand(time(NULL));
-    pthread_t h[size];
-    for( int i = 0 ; i < size/2 ; i++){
-        pthread_create (&h[i], NULL, trayecCirc, (void *) &enemies[i] );
-    }
-    for( int i = size/2 ; i < size; i++){
-        pthread_create (&h[i], NULL, trayecCirc, (void *) &enemies[i] );
-    }
-}
-
-
-void AnimacionEntrada(Enemy *enemies, int size){
-     printf(" Solo una vez \n");
-     srand(time(NULL));
-    pthread_t h[size];
-    for( int i = 0 ; i < size ; i+=2){
-        //printf("creacion del hilo %d \n", contador );
-        pthread_create (&h[i], NULL, moverEnemigo, (void *) &enemies[i] );
-    }
-    for( int i = 1 ; i < size; i+=2){
-        //printf("creacion del hilo %d \n", contador );
-        pthread_create (&h[i], NULL, moverEnemigo, (void *) &enemies[i] );
-        //pthread_create (&h[i++], NULL, moverEnemigo, (void *) enemies );
-    }
+    if(numMov==1)
+    for( int i = 0 ; i < size ; i++)
+        pthread_create (&h[i], NULL, animacionEntrada, (void *) &enemies[i] );
+    if(numMov==2)
+        for( int i = 0 ; i < size ; i++)
+            pthread_create (&h[i], NULL, movCuadrado, (void *) &enemies[i] );
+    if(numMov==3)
+        for( int i = 0 ; i < size ; i++)
+            pthread_create (&h[i], NULL, movCirc, (void *) &enemies[i] );
 }
 
 void DrawBullet(Bullet bullet[], int size){
