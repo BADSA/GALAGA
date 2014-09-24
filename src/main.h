@@ -1,6 +1,10 @@
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
-
+#define ENM1 al_load_bitmap("img/En01.PNG")
+#define ENM2 al_load_bitmap("img/En02.PNG")
+#define ENM3 al_load_bitmap("img/En03.PNG")
+#define ENM4 al_load_bitmap("img/En04.PNG")
+#define JEFE al_load_bitmap("img/jefe1.PNG")
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
