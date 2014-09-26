@@ -1,51 +1,78 @@
-#ifndef MAIN_H_INCLUDED
-#define MAIN_H_INCLUDED
+#ifndef OBJECTS_H_INCLUDED
+#define OBJECTS_H_INCLUDED
 
-#include <stdio.h>
-#include <pthread.h>
-#include <unistd.h>
+// STRUCTS ========================
+struct SpaceShip
+{
+    float x;
+	float y;
+    int w;
+	int h;
+	int speed;
+	ALLEGRO_BITMAP *image;
+};
 
-#include <allegro.h>
-#include <allegro_image.h>
-#include <allegro_native_dialog.h>
-#include <allegro_primitives.h>
-#include <allegro_font.h>
-#include <allegro_ttf.h>
+struct Bullet
+{
+	int x;
+	int y;
+	int r;
+	bool live;
+	int speed;
+};
 
-#include "objects.h"
+struct Sprite
+{
+	float x;
+	float y;
+    int w;
+	int h;
+	ALLEGRO_BITMAP *image;
+};
 
-#define WIDTH 640
-#define HEIGHT 480
+struct Enemy
+{
+	int x;
+	int y;
+	int x_fin;
+	int y_fin;
+    int w;
+	int h;
+	int ID;
+	bool live;
+	int speed;
+	ALLEGRO_BITMAP *image;
+	Bullet bullet;
 
-// status galaga
-#define MENU 1
-#define DESCRIPCION 2
-#define JUEGO 3
+	ALLEGRO_BITMAP *image2;
+	int cantVidas;
+	bool isBoss;
+};
+typedef struct
+{
+    float x;
+    float y;
+}
+Point2D;
 
-// opciones
-#define JUGAR 1
-#define ACERCA 2
-#define SALIR 3
+// METHODS ==========================
+void InitShip(SpaceShip &ship);
+void MoveShipLeft(SpaceShip &ship);
+void MoveShipRight(SpaceShip &ship);
 
-
-#define GREEN al_map_rgb(10,200,10)
-#define GRAY_SELECTED al_map_rgb(200,200,200)
-#define GRAY2 al_map_rgb(150,150,150)
-#define GRAY al_map_rgb(70,70,70)
-
-#define ENM1 al_load_bitmap("img/En01.PNG")
-#define ENM2 al_load_bitmap("img/En02.PNG")
-#define ENM3 al_load_bitmap("img/En03.PNG")
-#define ENM4 al_load_bitmap("img/En04.PNG")
-#define JEFE al_load_bitmap("img/jefe1.PNG")
-#define JEFE2 al_load_bitmap("img/jefe2.PNG")
-
-
-extern int NUM_BULLETS, NUM_ENEMIES;
-extern bool done, render, colision, enemyIsShooting;
-extern int score,vidas;
-
-int bbcollision(int b1_x, int b1_y, int b1_w, int b1_h, int b2_x, int b2_y, int b2_w, int b2_h);
+void InitBullet(Bullet bullet[], int size);
+void DrawBullet(Bullet bullet[], int size);
+void FireBullet(Bullet bullet[], int size, SpaceShip &ship);
+void UpdateBullet(Bullet bullet[], int size);
+void CollideBullet(Bullet bullet[], int bSize, Enemy enemies[], int eSize);
 
 
-#endif // MAIN_H_INCLUDED
+void InitEnemies(Enemy enemies[],int size);
+void DrawEnemies(Enemy enemies[], int size);
+
+void AnimacionEntrada(Enemy enemies[], int size);
+void *curveBezierAux(void * arg);
+void curveBezierAux( Point2D* cp, int numberOfPoints, Point2D *curve );
+Point2D PointOnCubicBezier( Point2D* cp, float t );
+
+#endif // OBJECTS_H_INCLUDED
