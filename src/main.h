@@ -17,7 +17,21 @@
 #include <allegro_ttf.h>
 
 #include "objects.h"
+// status galaga
+#define MENU 1
+#define DESCRIPCION 2
+#define JUEGO 3
 
+// opciones
+#define JUGAR 1
+#define ACERCA 2
+#define SALIR 3
+
+
+#define GREEN al_map_rgb(10,200,10)
+#define GRAY_SELECTED al_map_rgb(200,200,200)
+#define GRAY2 al_map_rgb(150,150,150)
+#define GRAY al_map_rgb(70,70,70)
 #define WIDTH 640
 #define HEIGHT 480
 

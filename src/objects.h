@@ -39,6 +39,7 @@ struct Enemy
 	int y_fin;
     int w;
 	int h;
+	int ID;
 	bool live;
 	int speed;
 	ALLEGRO_BITMAP *image;

@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <cmath>
+#include <stdlib.h>
 void MoveShipLeft(SpaceShip &ship)
 {
 	ship.x -= ship.speed;
@@ -34,11 +35,7 @@ void InitBullet(Bullet bullet[], int size){
 }
 
 void InitEnemies(Enemy enemies[],ALLEGRO_BITMAP *img,int size = 10,int xFinal = 0 , int yFinal =  0,int xInicial=0){
-    // CREAR LAS NAVES ENEMIGAS===================
-    //Enemy *enemies;
-    //int x_inicial = 90;
     int x_final=90+xFinal;
-    //int y_inicial = 220;
     for (int i =0;i<size;i++){
         enemies[i].ID=i;
         enemies[i].image = img;
@@ -66,8 +63,6 @@ void *animacionEntrada (void *arguments){
     if (e->x < e->x_fin){
         direc= true;
     }
-
-    //printf(" %d , %d , random %d \n", e->y , e->y_fin,r);
     while (e->y < e->y_fin){
         int ran = rand();
         usleep(5000+ran%10000);
@@ -91,10 +86,19 @@ void *movTriang (void *arguments){
     Enemy *e =(Enemy *) arguments;
     while (e->live){
         int ran = rand();
-        for (double t = 0; t < 2*(3.14159265); t += 0.01) {
+        for (int i = e->y; i<e->y_fin+100; i+=e->speed){
+            e->y+=e->speed;
+            e->x+=e->speed;
             usleep(10000+ran%10000);
-            e->x =(int)( 75*cos(t) + e->x_fin);
-            e->y =(int) (75*sin(t) + e->y_fin);
+        }
+        for (int i = e->x; i>e->x_fin-100;i-=e->speed){
+            e->x-=e->speed;
+            usleep(10000+ran%10000);
+        }
+        for (int i = e->y; i>e->y_fin; i-=e->speed){
+            e->y-=e->speed;
+            e->x+=e->speed;
+            usleep(10000+ran%10000);
         }
     }
     pthread_exit(NULL);
@@ -147,6 +151,12 @@ void movEnemies(Enemy *enemies, int size,int numMov){
     if(numMov==3)
         for( int i = 0 ; i < size ; i++)
             pthread_create (&h[i], NULL, movCirc, (void *) &enemies[i] );
+    if(numMov==4)
+        for( int i = 0 ; i < size ; i++)
+            pthread_create (&h[i], NULL, movTriang, (void *) &enemies[i] );
+    if(numMov==5)
+        for( int i = 0 ; i < size ; i++)
+            pthread_create (&h[i], NULL, curveBezier, (void *) &enemies[i] );
 }
 
 void DrawBullet(Bullet bullet[], int size){
@@ -195,4 +205,80 @@ void CollideBullet(Bullet bullet[], int bSize, Enemy enemies[], int eSize){
 			}
 		}
 	}
+}
+
+typedef struct
+{
+    float x;
+    float y;
+}
+Point2D;
+
+//============================================================================================
+/*
+Prueba para la curva de bezier
+*/
+
+Point2D PointOnCubicBezier( Point2D* cp, float t )
+{
+    float   ax, bx, cx;
+    float   ay, by, cy;
+    float   tSquared, tCubed;
+    Point2D result;
+
+    /* cálculo de los coeficientes polinomiales*/
+
+    cx = 3.0 * (cp[1].x - cp[0].x);
+    bx = 3.0 * (cp[2].x - cp[1].x) - cx;
+    ax = cp[3].x - cp[0].x - cx - bx;
+
+    cy = 3.0 * (cp[1].y - cp[0].y);
+    by = 3.0 * (cp[2].y - cp[1].y) - cy;
+    ay = cp[3].y - cp[0].y - cy - by;
+
+     /*calculate the curve point at parameter value t*/
+
+    tSquared = t * t;
+    tCubed = tSquared * t;
+
+    result.x = (ax * tCubed) + (bx * tSquared) + (cx * t) + cp[0].x;
+    result.y = (ay * tCubed) + (by * tSquared) + (cy * t) + cp[0].y;
+
+    return result;
+}
+
+/*
+ ComputeBezier fills an array of Point2D structs with the curve
+ points generated from the control points cp. Caller must
+ allocate sufficient memory for the result, which is
+ <sizeof(Point2D) numberOfPoints>
+*/
+
+void  curveBezier( Point2D* cp, int numberOfPoints, Point2D *curve ) {
+    float   dt;
+    int	  i;
+
+    dt = 1.0 / ( numberOfPoints - 1 );
+
+    for( i = 0; i < numberOfPoints; i++){
+        curve[i] = PointOnCubicBezier( cp, i*dt );
+        printf("Posicion x: %d , Posicion y: %d \n",(int)curve[i].x,(int)curve[i].y)
+            usleep(50000);
+        ;}
+}
+
+int hola(){
+    Point2D cp[4];
+    cp[0].x=5;
+    cp[0].y=50;
+    cp[1].x=0;
+    cp[1].y=0;
+    cp[3].x=100;
+    cp[3].y=0;
+    cp[4].x=150;
+    cp[4].y=10;
+
+    Point2D *curve= (Point2D*)malloc(sizeof(Point2D) *15);
+    curveBezier(cp,15, curve);
+    return 0;
 }
