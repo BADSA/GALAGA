@@ -51,26 +51,21 @@
 		<Unit filename="boss.jpg" />
 		<Unit filename="boss1.PNG" />
 		<Unit filename="fighter.jpg" />
-		<Unit filename="main.c">
-			<Option compilerVar="CPP" />
-		</Unit>
-		<Unit filename="main.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
 		<Unit filename="nave.png" />
 		<Unit filename="nave_old.jpg" />
-		<Unit filename="objects.c">
-			<Option compilerVar="CC" />
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="objects.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
 		<Unit filename="orb.png" />
 		<Unit filename="sp1.jpg" />
 		<Unit filename="sp2.jpg" />
 		<Unit filename="sp3.png" />
 		<Unit filename="sp4.gif" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.h" />
+		<Unit filename="src/objects.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/objects.h" />
 		<Unit filename="zero.PNG" />
 		<Extensions>
 			<envvars />
