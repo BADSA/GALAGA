@@ -1,0 +1,16 @@
+1. Normal, de color verde. Sera un insecto que no dispara y solo se coloca
+en el espacio de juego y aleatoriamente, si es seleccionado busca atacar
+de manera kamikaze a la nave del jugador. La trayectoria debe ser eliptica.
+
+2. Disparador, de color azul. Sera un insecto que dispara a la nave, pero
+no vuela, aleatoriamente deja caer un proyectil.
+
+3. Regresador, de color rojo, cuando baja describiendo una trayectoria
+elptica, al llegar al final de la pantalla realiza un giro (como un colo-
+cho) para intentar pegar a la nave por detras.
+
+4. Regresador disparador, color morado. Sera un insecto que cumple una
+funcion identica al de las dos descritas anteriores.
+
+5. Boss colores rojo y naranja. Rojo sera si no le han disparado previa-
+mente. Tiene la capacidad de atrapar las naves del jugador.
