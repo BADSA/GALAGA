@@ -7,7 +7,6 @@ void MoveShipLeft(SpaceShip &ship)
 	ship.x -= ship.speed;
 	if(ship.x < 0)
 		ship.x = 0;
-<<<<<<< HEAD
 }
 
 void MoveShipRight(SpaceShip &ship)
@@ -61,50 +60,6 @@ void InitEnemies(Enemy enemies[],ALLEGRO_BITMAP *img,ALLEGRO_BITMAP *img2,bool i
         x_final += 50;
     }
 }
-=======
-}
-
-void MoveShipRight(SpaceShip &ship)
-{
-	ship.x += ship.speed;
-	if(ship.x > WIDTH)
-		ship.x = WIDTH;
-}
-
-void InitShip(SpaceShip &ship){
-	ship.x = WIDTH / 2;
-	ship.y = 420;
-	ship.speed = 5;
-	ship.image = al_load_bitmap("img/zero.PNG");
-    ship.w = al_get_bitmap_width(ship.image);
-    ship.h = al_get_bitmap_height(ship.image);
-}
-
-void InitBullet(Bullet bullet[], int size){
-	for(int i = 0; i < size; i++){
-	    bullet[i].r = 2;
-		bullet[i].speed = 6;
-		bullet[i].live = false;
-	}
-}
-
-void InitEnemies(Enemy enemies[],ALLEGRO_BITMAP *img,int size = 10,int xFinal = 0 , int yFinal =  0,int xInicial=0){
-    int x_final=90+xFinal;
-    for (int i =0;i<size;i++){
-        enemies[i].ID=i;
-        enemies[i].image = img;
-        enemies[i].x_fin = x_final;
-        enemies[i].x =xInicial;
-        enemies[i].live = true;
-        enemies[i].y_fin = yFinal;
-        enemies[i].y = -5;
-        enemies[i].w = al_get_bitmap_width(enemies[i].image);
-        enemies[i].h = al_get_bitmap_height(enemies[i].image);
-        enemies[i].speed = 3;
-        x_final += 50;
-    }
-}
->>>>>>> c05fe6ae2f39075b34aca66d3fadab340e19b84f
 
 void DrawEnemies(Enemy *enemies, int size){
 	for( int i = 0; i < size; i++)
@@ -126,21 +81,12 @@ void *animacionEntrada (void *arguments){
             while (e->x < e->x_fin){
                 usleep(5000+ran%10000);
                 e->x += e->speed;
-<<<<<<< HEAD
             }
         }else {
             while (e->x > e->x_fin){
                 usleep(5000+ran%10000);
                 e->x -= e->speed;
             }
-=======
-            }
-        }else {
-            while (e->x > e->x_fin){
-                usleep(5000+ran%10000);
-                e->x -= e->speed;
-            }
->>>>>>> c05fe6ae2f39075b34aca66d3fadab340e19b84f
         }
     }
     pthread_exit(NULL);
@@ -197,21 +143,12 @@ void *movCuadrado (void *arguments){
             for (int i=e->x; i<e->x_fin; i+=e->speed){e->x=i;usleep(10000+ran%10000);}; //e->x=i;
             for (int i=e->y; i>e->y_fin; i-=e->speed){e->y=i;usleep(10000+ran%10000);}; //e->x=i;
         }
-<<<<<<< HEAD
 
     }
     pthread_exit(NULL);
 }
 
 
-=======
-
-    }
-    pthread_exit(NULL);
-}
-
-
->>>>>>> c05fe6ae2f39075b34aca66d3fadab340e19b84f
 
 void DrawBullet(Bullet bullet[], int size){
 	for( int i = 0; i < size; i++){
@@ -240,7 +177,6 @@ void UpdateBullet(Bullet bullet[], int size){
 		}
 	}
 }
-<<<<<<< HEAD
 
 
 void CollideBullet(Bullet bullet[], int bSize, Enemy enemies[], int eSize){
@@ -457,114 +393,5 @@ void DrawEnemyBullets(Enemy enemies[],int size){
 		if(enemies[i].bullet.live)
 			al_draw_filled_circle(enemies[i].bullet.x, enemies[i].bullet.y, enemies[i].bullet.r , al_map_rgb(255, 255, 255));
 	}
-=======
-
-
-void CollideBullet(Bullet bullet[], int bSize, Enemy enemies[], int eSize){
-	for(int i = 0; i < bSize; i++){
-		if(bullet[i].live){
-			for(int j =0; j < eSize; j++){
-				if(enemies[j].live){
-					if( bbcollision(bullet[i].x , bullet[i].y, bullet[i].r, bullet[i].r,
-                                    enemies[j].x, enemies[j].y, enemies[j].w, enemies[j].h)){
-						bullet[i].live = false;
-						enemies[j].live = false;
-						colision=true; // solo para probar
-						score += 7;
-						return;
-					}else colision=false;
-				}
-			}
-		}
-	}
-}
-//============================================================================================
-/*
-Prueba para la curva de bezier
-*/
-
-Point2D PointOnCubicBezier( Point2D* cp, float t )
-{
-    float   ax, bx, cx;
-    float   ay, by, cy;
-    float   tSquared, tCubed;
-    Point2D result;
-
-    /* cálculo de los coeficientes polinomiales*/
-
-    cx = 3.0 * (cp[1].x - cp[0].x);
-    bx = 3.0 * (cp[2].x - cp[1].x) - cx;
-    ax = cp[3].x - cp[0].x - cx - bx;
-
-    cy = 3.0 * (cp[1].y - cp[0].y);
-    by = 3.0 * (cp[2].y - cp[1].y) - cy;
-    ay = cp[3].y - cp[0].y - cy - by;
-
-     /*calculate the curve point at parameter value t*/
-
-    tSquared = t * t;
-    tCubed = tSquared * t;
-
-    result.x = (ax * tCubed) + (bx * tSquared) + (cx * t) + cp[0].x;
-    result.y = (ay * tCubed) + (by * tSquared) + (cy * t) + cp[0].y;
-
-    return result;
 }
 
-/*
- ComputeBezier fills an array of Point2D structs with the curve
- points generated from the control points cp. Caller must
- allocate sufficient memory for the result, which is
- <sizeof(Point2D) numberOfPoints>
-*/
-
-void  curveBezierAux( Point2D* cp, int numberOfPoints, Point2D *curve, Enemy *e ) {
-    float   dt;
-    int	  i;
-
-    dt = 1.0 / ( numberOfPoints - 1 );
-
-    for( i = 0; i < numberOfPoints; i++){
-        curve[i] = PointOnCubicBezier( cp, i*dt );
-        e->x=(int)curve[i].x; e->y=(int)curve[i].y ;
-            usleep(50000);
-        }
-}
-
-void  * curveBezier( void * arg){
-    Enemy *e =(Enemy *) arg;
-    Point2D cp[4];
-    cp[0].x=e->x;
-    cp[0].y=e->y;
-    cp[1].x=0;
-    cp[1].y=0;
-    cp[3].x=100;
-    cp[3].y=0;
-    cp[4].x=150;
-    cp[4].y=10;
-    Point2D *curve= (Point2D*)malloc(sizeof(Point2D) *15);
-    curveBezierAux(cp,15, curve,e);
-    pthread_exit(NULL);
-
->>>>>>> c05fe6ae2f39075b34aca66d3fadab340e19b84f
-}
-
-void movEnemies(Enemy *enemies, int size,int numMov){
-    srand(time(NULL));
-    pthread_t h[size];
-    if(numMov==1)
-    for( int i = 0 ; i < size ; i++)
-        pthread_create (&h[i], NULL, animacionEntrada, (void *) &enemies[i] );
-    if(numMov==2)
-        for( int i = 0 ; i < size ; i++)
-            pthread_create (&h[i], NULL, movCuadrado, (void *) &enemies[i] );
-    if(numMov==3)
-        for( int i = 0 ; i < size ; i++)
-            pthread_create (&h[i], NULL, movCirc, (void *) &enemies[i] );
-    if(numMov==4)
-        for( int i = 0 ; i < size ; i++)
-            pthread_create (&h[i], NULL, movTriang, (void *) &enemies[i] );
-    if(numMov==5)
-        for( int i = 0 ; i < size ; i++)
-            pthread_create (&h[i], NULL, curveBezier, (void *) &enemies[i] );
-}
