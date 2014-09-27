@@ -112,3 +112,25 @@
 	<stdio.h>
 	<time.h>
 
+1411778572 source:/home/sd/Documents/Lenguajes/GALAGA/main.c
+	"main.h"
+	"objects.c"
+
+1411780150 /home/sd/Documents/Lenguajes/GALAGA/main.h
+	<stdio.h>
+	<pthread.h>
+	<unistd.h>
+	<math.h>
+	<allegro.h>
+	<allegro_image.h>
+	<allegro_native_dialog.h>
+	<allegro_primitives.h>
+	<allegro_font.h>
+	<allegro_ttf.h>
+	"objects.h"
+
+1411778572 /home/sd/Documents/Lenguajes/GALAGA/objects.h
+
+1411778572 /home/sd/Documents/Lenguajes/GALAGA/objects.c
+	"main.h"
+

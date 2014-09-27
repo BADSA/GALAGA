@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="/usr/include/allegro5/" />
 				</Compiler>
 				<Linker>
 					<Add library="/usr/lib/liballegro.so" />
@@ -28,6 +29,8 @@
 					<Add library="/usr/lib/liballegro_primitives.so" />
 					<Add library="/usr/lib/liballegro_ttf.so" />
 					<Add library="pthread" />
+					<Add directory="/usr/include/allegro5/" />
+					<Add directory="/usr/lib/" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -47,26 +50,31 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="fonts/Sarpanch-SemiBold.ttf" />
-		<Unit filename="fonts/pirulen.ttf" />
-		<Unit filename="img/En01.PNG" />
-		<Unit filename="img/En02.PNG" />
-		<Unit filename="img/En03.PNG" />
-		<Unit filename="img/En04.PNG" />
-		<Unit filename="img/boss1.PNG" />
-		<Unit filename="img/jefe.PNG" />
-		<Unit filename="img/jefe2.PNG" />
-		<Unit filename="img/sp1.jpg" />
-		<Unit filename="img/sp3.png" />
-		<Unit filename="img/zero.PNG" />
-		<Unit filename="src/main.c">
-			<Option compilerVar="CC" />
+		<Unit filename="Sarpanch-SemiBold.ttf" />
+		<Unit filename="boss.jpg" />
+		<Unit filename="boss1.PNG" />
+		<Unit filename="fighter.jpg" />
+		<Unit filename="main.c">
+			<Option compilerVar="CPP" />
 		</Unit>
-		<Unit filename="src/main.h" />
-		<Unit filename="src/objects.c">
-			<Option compilerVar="CC" />
+		<Unit filename="main.h">
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="src/objects.h" />
+		<Unit filename="nave.png" />
+		<Unit filename="nave_old.jpg" />
+		<Unit filename="objects.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="objects.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="orb.png" />
+		<Unit filename="sp1.jpg" />
+		<Unit filename="sp2.jpg" />
+		<Unit filename="sp3.png" />
+		<Unit filename="sp4.gif" />
+		<Unit filename="zero.PNG" />
 		<Extensions>
 			<envvars />
 			<code_completion />

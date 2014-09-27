@@ -67,8 +67,8 @@ int main(){
 	al_init_primitives_addon();
 
     // FONT DEL PROGRAMA.
-	ALLEGRO_FONT *font = al_load_ttf_font("Sarpanch-SemiBold.ttf",30,0 );
-	ALLEGRO_FONT *font_copy = al_load_ttf_font("Sarpanch-SemiBold.ttf",20,0 );
+	ALLEGRO_FONT *font = al_load_ttf_font("fonts/Sarpanch-SemiBold.ttf",30,0 );
+	ALLEGRO_FONT *font_copy = al_load_ttf_font("fonts/Sarpanch-SemiBold.ttf",20,0 );
 	//ALLEGRO_FONT *font_menu = al_load_ttf_font("pirulen.ttf",50,0 );
 	//ALLEGRO_FONT *font_menu2 = al_load_ttf_font("pirulen.ttf",30,0 );
 	//ALLEGRO_FONT *font_descr = al_load_ttf_font("pirulen.ttf",20,0 );
