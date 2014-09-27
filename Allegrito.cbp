@@ -47,17 +47,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Sarpanch-SemiBold.ttf" />
-		<Unit filename="boss.jpg" />
-		<Unit filename="boss1.PNG" />
-		<Unit filename="fighter.jpg" />
-		<Unit filename="nave.png" />
-		<Unit filename="nave_old.jpg" />
-		<Unit filename="orb.png" />
-		<Unit filename="sp1.jpg" />
-		<Unit filename="sp2.jpg" />
-		<Unit filename="sp3.png" />
-		<Unit filename="sp4.gif" />
+		<Unit filename="fonts/Sarpanch-SemiBold.ttf" />
+		<Unit filename="fonts/pirulen.ttf" />
+		<Unit filename="img/En01.PNG" />
+		<Unit filename="img/En02.PNG" />
+		<Unit filename="img/En03.PNG" />
+		<Unit filename="img/En04.PNG" />
+		<Unit filename="img/boss1.PNG" />
+		<Unit filename="img/jefe.PNG" />
+		<Unit filename="img/jefe2.PNG" />
+		<Unit filename="img/sp1.jpg" />
+		<Unit filename="img/sp3.png" />
+		<Unit filename="img/zero.PNG" />
 		<Unit filename="src/main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -66,7 +67,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/objects.h" />
-		<Unit filename="zero.PNG" />
 		<Extensions>
 			<envvars />
 			<code_completion />

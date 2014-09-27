@@ -14,8 +14,10 @@ int vidas = 3;
 short status = MENU;
 int NUM_BULLETS = 5;
 int NUM_ENEMIES = 10;
+int muertos = 0,nivel = 1, speed = 2;
 
 bool enemyIsShooting = false;
+bool animacionTerminada = false;
 
 void limpiarTeclas(){
     keys[LEFT] = false;
@@ -65,8 +67,8 @@ int main(){
 	al_init_primitives_addon();
 
     // FONT DEL PROGRAMA.
-	ALLEGRO_FONT *font = al_load_ttf_font("fonts/Sarpanch-SemiBold.ttf",30,0 );
-	ALLEGRO_FONT *font_copy = al_load_ttf_font("fonts/Sarpanch-SemiBold.ttf",20,0 );
+	ALLEGRO_FONT *font = al_load_ttf_font("Sarpanch-SemiBold.ttf",30,0 );
+	ALLEGRO_FONT *font_copy = al_load_ttf_font("Sarpanch-SemiBold.ttf",20,0 );
 	//ALLEGRO_FONT *font_menu = al_load_ttf_font("pirulen.ttf",50,0 );
 	//ALLEGRO_FONT *font_menu2 = al_load_ttf_font("pirulen.ttf",30,0 );
 	//ALLEGRO_FONT *font_descr = al_load_ttf_font("pirulen.ttf",20,0 );
@@ -81,9 +83,11 @@ int main(){
     Enemy enemies4[4];
     Enemy jefe1[2];
     Bullet bullets[5];
+    Explosion explosion;
 
 
     char vidas_char[2];
+    char nivel_char[2];
     ALLEGRO_COLOR cJugar = GRAY_SELECTED;
     ALLEGRO_COLOR cAcerca = GRAY;
     ALLEGRO_COLOR cSalir = GRAY;
@@ -96,11 +100,12 @@ int main(){
     // INICIALIZAR OBJETOS====================
     InitShip(nave_jugador);
     InitBullet(bullets, NUM_BULLETS);
-    InitEnemies(enemies1,ENM1,NULL,false,10,0,220,WIDTH/2);
-    InitEnemies(enemies2,ENM2,NULL,false,8,50,180,WIDTH/2+100);
-    InitEnemies(enemies3,ENM3,NULL,false,6,100,140,WIDTH);
-    InitEnemies(enemies4,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
-    InitEnemies(jefe1,JEFE,JEFE2,true,2,200,60);
+    InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
+    InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
+    InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
+    InitEnemies(enemies4,speed,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
+    InitEnemies(jefe1,speed,JEFE,JEFE2,true,2,200,60);
+    InitExplosion(explosion);
 
 	//==============================================
 	//TIMER INIT AND STARTUP
@@ -320,12 +325,13 @@ int main(){
                         //BossAtack();
                     }else if (ataque>=6 and ataque<=100){
                         if (!enemyIsShooting){
-                            printf("llamar a Shooter Enemy");
+                            printf("Escogiendo enemigo disparador\n");
                             ShooterEnemy(enemies2, 8);
                         }
                     }
                 }
 
+                //if (nivel ==2) printf("%d %d %d\n",animacion,animacion2,enemyIsShooting);
 
                 CollideBullet(bullets,NUM_BULLETS,enemies1,NUM_ENEMIES);
                 CollideBullet(bullets,NUM_BULLETS,enemies2,8);
@@ -336,9 +342,6 @@ int main(){
                 // ESTO DEBE SERVIR
                 CollideBulletSpaceship(enemies2,8,nave_jugador);
 
-                if (!animacion2){
-                    //UpdateBulletEnemy(enemies2,8);
-                }
             }
 
             //==============================================
@@ -361,11 +364,14 @@ int main(){
                 }
 
                 al_draw_bitmap(bg, 0, 0, 0);
-                al_draw_bitmap(nave_jugador.image, 5,440,0);
+                al_draw_bitmap(al_load_bitmap("img/zero.PNG"), 5,440,0);
                 al_draw_text(font, al_map_rgb(255,255,255), 40,430, 0, "X");
                 sprintf(vidas_char,"%d",vidas);
                 al_draw_text(font, al_map_rgb(255,255,255), 60,430, 0, vidas_char);
                 al_draw_text(font, al_map_rgb(255,255,255), WIDTH/2 - 30, 0,ALLEGRO_ALIGN_CENTRE, "Score");
+                al_draw_text(font, al_map_rgb(255,255,255), 50, 0,ALLEGRO_ALIGN_CENTRE, "Nivel");
+                sprintf(nivel_char,"%d",nivel);
+                al_draw_text(font, al_map_rgb(255,255,255), 100,0, 0, nivel_char);
                 char vartext[10];
                 sprintf(vartext,"%d",score);
                 al_draw_text(font, al_map_rgb(255,255,255), WIDTH/2 + 40, 0, 0, vartext);
@@ -387,9 +393,24 @@ int main(){
 
                 if(!animacion){
                     if (animacion2) animacion2 = checkAnimationStatus(enemies1, enemies2, enemies3, enemies4, jefe1);
+                    printf("%d\n",animacion2);
                     if (!animacion2){
                         DrawEnemyBullets(enemies2,8);
                     }
+                }
+
+                if (muertos==30){
+                    nivel++;
+                    muertos=0;
+                    speed++;speed++;
+                    InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
+                    InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
+                    InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
+                    InitEnemies(enemies4,speed,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
+                    InitEnemies(jefe1,speed,JEFE,JEFE2,true,2,200,60);
+                    animacion = true;
+                    animacion2 = true;
+                    enemyIsShooting = false;
                 }
 
                 al_flip_display();
@@ -437,15 +458,16 @@ int main(){
                 render = true;
                 if (keys[ENTER]){
                     if (seleccion == JUGAR){
-                        InitEnemies(enemies1,ENM1,NULL,false,10,0,220,WIDTH/2);
-                        InitEnemies(enemies2,ENM2,NULL,false,8,50,180,WIDTH/2+100);
-                        InitEnemies(enemies3,ENM3,NULL,false,6,100,140,WIDTH);
-                        InitEnemies(enemies4,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
-                        InitEnemies(jefe1,JEFE,JEFE2,true,2,200,60);
+                        InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
+                        InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
+                        InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
+                        InitEnemies(enemies4,speed,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
+                        InitEnemies(jefe1,speed,JEFE,JEFE2,true,2,200,60);
 
                         limpiarTeclas();
                         animacion = true;
                         animacion2 = true;
+                        nivel = 1;
                         vidas = 3;
                         status = JUEGO;
                     }else if (seleccion == SALIR){
