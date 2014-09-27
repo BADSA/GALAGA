@@ -54,7 +54,7 @@
 	<allegro_ttf.h>
 	"objects.h"
 
-1409513769 /usr/include/allegro5//allegro.h
+1410809790 /usr/include/allegro5//allegro.h
 	"allegro5/base.h"
 	"allegro5/altime.h"
 	"allegro5/bitmap.h"
@@ -89,18 +89,18 @@
 	"allegro5/utf8.h"
 	"allegro5/alcompat.h"
 
-1409513573 /usr/include/allegro5//allegro_image.h
+1410809739 /usr/include/allegro5//allegro_image.h
 
-1409513769 /usr/include/allegro5//allegro_native_dialog.h
+1410809790 /usr/include/allegro5//allegro_native_dialog.h
 	"allegro5/allegro.h"
 
-1409513769 /usr/include/allegro5//allegro_primitives.h
+1410809790 /usr/include/allegro5//allegro_primitives.h
 	<allegro5/allegro.h>
 
-1409513769 /usr/include/allegro5//allegro_font.h
+1410809790 /usr/include/allegro5//allegro_font.h
 	"allegro5/allegro.h"
 
-1409513573 /usr/include/allegro5//allegro_ttf.h
+1410809739 /usr/include/allegro5//allegro_ttf.h
 	"allegro5/allegro.h"
 	"allegro5/allegro_font.h"
 
@@ -132,5 +132,27 @@
 1411778572 /home/sd/Documents/Lenguajes/GALAGA/objects.h
 
 1411778572 /home/sd/Documents/Lenguajes/GALAGA/objects.c
+	"main.h"
+
+1411781963 source:/home/melalonso/GALAGA/main.c
+	"main.h"
+	"objects.c"
+
+1411781950 /home/melalonso/GALAGA/main.h
+	<stdio.h>
+	<pthread.h>
+	<unistd.h>
+	<cmath>
+	<allegro.h>
+	<allegro_image.h>
+	<allegro_native_dialog.h>
+	<allegro_primitives.h>
+	<allegro_font.h>
+	<allegro_ttf.h>
+	"objects.h"
+
+1411753403 /home/melalonso/GALAGA/objects.h
+
+1411778702 /home/melalonso/GALAGA/objects.c
 	"main.h"
 

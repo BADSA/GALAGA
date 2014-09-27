@@ -38,7 +38,7 @@
 #define ENM4 al_load_bitmap("img/En04.PNG")
 #define JEFE al_load_bitmap("img/jefe1.PNG")
 #define JEFE2 al_load_bitmap("img/jefe2.PNG")
-#define font(tam) al_load_ttf_font("pirulen.ttf",tam,0 )
+#define font(tam) al_load_ttf_font("fonts/pirulen.ttf",tam,0 )
 
 extern int NUM_BULLETS, NUM_ENEMIES;
 extern bool done, render, colision, enemyIsShooting;
