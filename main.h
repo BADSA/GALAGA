@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <pthread.h>
 #include <unistd.h>
-#include <cmath>
+#include <math.h>
 #include <allegro.h>
 #include <allegro_image.h>
 #include <allegro_native_dialog.h>

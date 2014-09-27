@@ -267,26 +267,35 @@ void  curveBezierAux( Point2D* cp, int numberOfPoints, Point2D *curve, Enemy *e 
         e->x=(int)curve[i].x; e->y=(int)curve[i].y ;
             usleep(50000);
         }
-    for( i = numberOfPoints-1; i>0; i--){
-        curve[i] = PointOnCubicBezier( cp, i*dt );
-        e->x=(int)curve[i].x; e->y=(int)curve[i].y ;
-            usleep(50000);
-    }
 }
 
 void  * curveBezier( void * arg){
     Enemy *e =(Enemy *) arg;
+    Point2D curve[50]; //= (Point2D*)malloc(sizeof(Point2D) *50);
     Point2D cp[4];
+    Point2D temp[4];
     cp[0].x=e->x_fin;
     cp[0].y=e->y_fin;
-    cp[1].x=e->x_fin-50;
-    cp[1].y=e->y_fin+150;
+    cp[1].x=e->x_fin+150;
+    cp[1].y=e->y_fin-50;
     cp[2].x=cp[1].x;
-    cp[2].y=cp[1].x+50;
-    cp[3].x= cp[0].x+300;
-    cp[3].y= cp[0].y;
-    Point2D *curve= (Point2D*)malloc(sizeof(Point2D) *50);
+    cp[2].y=cp[1].y+200;
+    cp[3].x= cp[0].x;
+    cp[3].y= cp[0].y+300;
+
     curveBezierAux(cp,50, curve,e);
+
+    temp[0].x=cp[3].x;
+    temp[0].y=cp[3].y;
+    temp[1].x=cp[2].x;//;-300;
+    temp[1].y=cp[2].y;
+    temp[2].x=cp[1].x;// -300;
+    temp[2].y=cp[1].y;
+    temp[3].x=cp[0].x;
+    temp[3].y=cp[0].y;
+
+    curveBezierAux(temp,50, curve,e);
+
     pthread_exit(NULL);
 
 }

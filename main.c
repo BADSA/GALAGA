@@ -415,10 +415,10 @@ int main(){
                 DrawBullet(bullets, NUM_BULLETS);
 
                 // Dibuja los enemigos.
-                DrawEnemies(enemies1,10);
-                DrawEnemies(enemies2,8);
-                DrawEnemies(enemies3,6);
-                DrawEnemies(enemies4,4);
+                //DrawEnemies(enemies1,10);
+                //DrawEnemies(enemies2,8);
+                //DrawEnemies(enemies3,6);
+                //DrawEnemies(enemies4,4);
                 DrawEnemies(jefe1,2);
 
                 if(!animacion){
@@ -448,13 +448,13 @@ int main(){
                 al_clear_to_color(al_map_rgb(0,0,0));
 
 
-                /*
+
                 if (movimientos){
                     movimientos=0;
                   //  movCuadrado(enemies1,10);
                    movEnemies(jefe1,8,5);
                 }
-                */
+
 
             }
 
