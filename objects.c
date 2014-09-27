@@ -420,3 +420,9 @@ void DrawEnemyBullets(Enemy enemies[],int size){
 	}
 }
 
+void limpiarBullets(Enemy enemies[],int size){
+    for( int i = 0; i < size; i++){
+		enemies[i].bullet.live = false;
+	}
+}
+

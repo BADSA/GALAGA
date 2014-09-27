@@ -14,7 +14,7 @@ int vidas = 3;
 short status = MENU;
 int NUM_BULLETS = 5;
 int NUM_ENEMIES = 10;
-int muertos = 0,nivel = 1, speed = 2;
+int muertos = 0,nivel = 4, speed = 2;
 
 bool enemyIsShooting = false;
 bool animacionTerminada = false;
@@ -67,8 +67,8 @@ int main(){
 	al_init_primitives_addon();
 
     // FONT DEL PROGRAMA.
-	ALLEGRO_FONT *font = al_load_ttf_font("fonts/Sarpanch-SemiBold.ttf",30,0 );
-	ALLEGRO_FONT *font_copy = al_load_ttf_font("fonts/Sarpanch-SemiBold.ttf",20,0 );
+	ALLEGRO_FONT *font = al_load_ttf_font("Sarpanch-SemiBold.ttf",30,0 );
+	ALLEGRO_FONT *font_copy = al_load_ttf_font("Sarpanch-SemiBold.ttf",20,0 );
 	//ALLEGRO_FONT *font_menu = al_load_ttf_font("pirulen.ttf",50,0 );
 	//ALLEGRO_FONT *font_menu2 = al_load_ttf_font("pirulen.ttf",30,0 );
 	//ALLEGRO_FONT *font_descr = al_load_ttf_font("pirulen.ttf",20,0 );
@@ -78,9 +78,9 @@ int main(){
 
     SpaceShip nave_jugador;
     Enemy enemies1[10];
-    Enemy enemies2[8];
-    Enemy enemies3[6];
-    Enemy enemies4[4];
+    Enemy enemies2[10];
+    Enemy enemies3[10];
+    Enemy enemies4[10];
     Enemy jefe1[2];
     Bullet bullets[5];
     Explosion explosion;
@@ -95,15 +95,16 @@ int main(){
     bool keyPressed = false;
     bool animacion = true;
     bool animacion2 = true;
+    bool chaStage = false;
 //    int ataque = 0;
 
     // INICIALIZAR OBJETOS====================
     InitShip(nave_jugador);
     InitBullet(bullets, NUM_BULLETS);
     InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
-    InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
-    InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
-    InitEnemies(enemies4,speed,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
+    InitEnemies(enemies2,speed,ENM2,NULL,false,10,50,180,WIDTH/2+100);
+    InitEnemies(enemies3,speed,ENM3,NULL,false,10,100,140,WIDTH);
+    InitEnemies(enemies4,speed,ENM4,NULL,false,10,150,100,(WIDTH/2)+100);
     InitEnemies(jefe1,speed,JEFE,JEFE2,true,2,200,60);
     InitExplosion(explosion);
 
@@ -267,6 +268,8 @@ int main(){
                 al_clear_to_color(al_map_rgb(0,0,0));
             }
 		}else if (status == JUEGO){
+		    if (nivel%4==0) chaStage = true;
+		    else chaStage = false;
             //==============================================
             //INPUT
             //==============================================
@@ -319,28 +322,37 @@ int main(){
 
                 UpdateBullet(bullets, NUM_BULLETS);
 
-                if (!animacion2){
-                    ataque = rand()%1000;
-                    if (ataque>=0 and ataque<=5){
-                        //BossAtack();
-                    }else if (ataque>=6 and ataque<=100){
-                        if (!enemyIsShooting){
-                            printf("Escogiendo enemigo disparador\n");
-                            ShooterEnemy(enemies2, 8);
+                if (!chaStage){
+                    if (!animacion2){
+                        ataque = rand()%1000;
+                        if (ataque>=0 and ataque<=5){
+                            //BossAtack();
+                        }else if (ataque>=6 and ataque<=100){
+                            if (!enemyIsShooting){
+                                printf("Escogiendo enemigo disparador\n");
+                                ShooterEnemy(enemies2, 8);
+                            }
                         }
                     }
+
+                    CollideBullet(bullets,NUM_BULLETS,enemies1,NUM_ENEMIES);
+                    CollideBullet(bullets,NUM_BULLETS,enemies2,8);
+                    CollideBullet(bullets,NUM_BULLETS,enemies3,6);
+                    CollideBullet(bullets,NUM_BULLETS,enemies4,4);
+                    CollideBullet(bullets,NUM_BULLETS,jefe1,2);
+
+                    CollideBulletSpaceship(enemies2,8,nave_jugador);
+
+                }else if (chaStage){
+                    CollideBullet(bullets,NUM_BULLETS,enemies1,10);
+                    CollideBullet(bullets,NUM_BULLETS,enemies2,10);
+                    CollideBullet(bullets,NUM_BULLETS,enemies3,10);
+                    CollideBullet(bullets,NUM_BULLETS,enemies4,10);
                 }
 
                 //if (nivel ==2) printf("%d %d %d\n",animacion,animacion2,enemyIsShooting);
 
-                CollideBullet(bullets,NUM_BULLETS,enemies1,NUM_ENEMIES);
-                CollideBullet(bullets,NUM_BULLETS,enemies2,8);
-                CollideBullet(bullets,NUM_BULLETS,enemies3,6);
-                CollideBullet(bullets,NUM_BULLETS,enemies4,4);
-                CollideBullet(bullets,NUM_BULLETS,jefe1,2);
-
                 // ESTO DEBE SERVIR
-                CollideBulletSpaceship(enemies2,8,nave_jugador);
 
             }
 
@@ -353,28 +365,46 @@ int main(){
                 // INFORMACION DEL JUEGO Y BG
                 if (vidas==0){status = GAME_OVER ; limpiarTeclas();}
 
-                if (animacion){
+                if (!chaStage){
+                    if (animacion){
+                        movEnemies(enemies1,10,1);
+                        movEnemies(enemies2, 8,1);
+                        movEnemies(enemies3,6,1);
+                        movEnemies(enemies4,4,1);
+                        movEnemies(jefe1,2,1);
+                        animacion = false;
+                        //movimientos=1;
+                    }
+                }else{
+                    if (animacion){
                     movEnemies(enemies1,10,1);
-                    movEnemies(enemies2, 8,1);
-                    movEnemies(enemies3,6,1);
-                    movEnemies(enemies4,4,1);
-                    movEnemies(jefe1,2,1);
-                    animacion = false;
-                    //movimientos=1;
+                    movEnemies(enemies2, 10,1);
+                    movEnemies(enemies3,10,1);
+                    movEnemies(enemies4,10,1);
+                    animacion=false;
+                    }
                 }
 
+
+                // Objetos de la Ventana
                 al_draw_bitmap(bg, 0, 0, 0);
                 al_draw_bitmap(al_load_bitmap("img/zero.PNG"), 5,440,0);
                 al_draw_text(font, al_map_rgb(255,255,255), 40,430, 0, "X");
                 sprintf(vidas_char,"%d",vidas);
                 al_draw_text(font, al_map_rgb(255,255,255), 60,430, 0, vidas_char);
                 al_draw_text(font, al_map_rgb(255,255,255), WIDTH/2 - 30, 0,ALLEGRO_ALIGN_CENTRE, "Score");
-                al_draw_text(font, al_map_rgb(255,255,255), 50, 0,ALLEGRO_ALIGN_CENTRE, "Nivel");
-                sprintf(nivel_char,"%d",nivel);
-                al_draw_text(font, al_map_rgb(255,255,255), 100,0, 0, nivel_char);
                 char vartext[10];
                 sprintf(vartext,"%d",score);
                 al_draw_text(font, al_map_rgb(255,255,255), WIDTH/2 + 40, 0, 0, vartext);
+
+                // no esta en el challenging stage
+                if (nivel%4 !=0){
+                    al_draw_text(font, al_map_rgb(255,255,255), 50, 0,ALLEGRO_ALIGN_CENTRE, "Nivel");
+                    sprintf(nivel_char,"%d",nivel);
+                    al_draw_text(font, al_map_rgb(255,255,255), 100,0, 0, nivel_char);
+                }else{
+                    al_draw_text(font(15), al_map_rgb(255,255,255), 120, 15,ALLEGRO_ALIGN_CENTRE, "Challenging Stage");
+                }
 
                 // Dibujar nave
                 al_draw_bitmap(nave_jugador.image, nave_jugador.x - nave_jugador.w / 2, nave_jugador.y - nave_jugador.h / 2, 0);
@@ -393,16 +423,16 @@ int main(){
 
                 if(!animacion){
                     if (animacion2) animacion2 = checkAnimationStatus(enemies1, enemies2, enemies3, enemies4, jefe1);
-                    printf("%d\n",animacion2);
                     if (!animacion2){
                         DrawEnemyBullets(enemies2,8);
                     }
                 }
 
-                if (muertos==30){
+                if (muertos==30 and !chaStage){
                     nivel++;
                     muertos=0;
                     speed++;speed++;
+                    limpiarBullets(enemies2,8);
                     InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
                     InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
                     InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
@@ -412,6 +442,7 @@ int main(){
                     animacion2 = true;
                     enemyIsShooting = false;
                 }
+
 
                 al_flip_display();
                 al_clear_to_color(al_map_rgb(0,0,0));
@@ -458,17 +489,18 @@ int main(){
                 render = true;
                 if (keys[ENTER]){
                     if (seleccion == JUGAR){
+                        speed = 2;
                         InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
                         InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
                         InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
                         InitEnemies(enemies4,speed,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
                         InitEnemies(jefe1,speed,JEFE,JEFE2,true,2,200,60);
-
                         limpiarTeclas();
                         animacion = true;
                         animacion2 = true;
                         nivel = 1;
                         vidas = 3;
+                        score = 0;
                         status = JUEGO;
                     }else if (seleccion == SALIR){
                         done=true;
