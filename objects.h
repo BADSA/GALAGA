@@ -21,21 +21,6 @@ struct Bullet
 	int speed;
 };
 
-struct Sprite
-{
-	float x;
-	float y;
-    int w;
-	int h;
-	ALLEGRO_BITMAP *image;
-};
-
-struct Explosion{
-    int x;
-    int y;
-    ALLEGRO_BITMAP *image;
-};
-
 struct Enemy
 {
 	int x;
@@ -46,6 +31,8 @@ struct Enemy
 	int h;
 	int ID;
 	bool live;
+	int opcional;
+	bool atacando;
 	int speed;
 	ALLEGRO_BITMAP *image;
 	Bullet bullet;
@@ -54,12 +41,23 @@ struct Enemy
 	int cantVidas;
 	bool isBoss;
 };
+
 typedef struct
 {
     float x;
     float y;
 }
 Point2D;
+
+struct Tbeam{
+    bool live;
+    float x;
+	float y;
+    int w;
+	int h;
+	int speed;
+	ALLEGRO_BITMAP *image;
+};
 
 // METHODS ==========================
 void InitShip(SpaceShip &ship);
@@ -80,5 +78,6 @@ void AnimacionEntrada(Enemy enemies[], int size);
 void *curveBezierAux(void * arg);
 void curveBezierAux( Point2D* cp, int numberOfPoints, Point2D *curve );
 Point2D PointOnCubicBezier( Point2D* cp, float t );
+void  * disparaEnemigo( void * arg);
 
 #endif // OBJECTS_H_INCLUDED
