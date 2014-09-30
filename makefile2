@@ -1,0 +1,15 @@
+CXX=gcc
+CFLAGS=-Wall
+LDFLAGS=`pkg-config --libs allegro-5.0 allegro_audio-5.0 allegro_font-5.0 allegro_ttf-5.0 allegro_image-5.0 allegro_acodec-5.0`
+INCLUDE=main.h objects.h
+DEBUGMODE=1
+OBJS=main.c objects.c
+OUT=main 
+
+all: main_rule
+
+clean:
+	rm -rf *.o main
+
+main_rule: $(OBJS)
+	$(CXX) $(OBJS) -o $(OUT) $(INCLUDE) $(CFLAGS) $(LDFLAGS)

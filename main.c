@@ -7,27 +7,40 @@ enum KEYS{LEFT, RIGHT, UP, DOWN, SPACE, ENTER};
 // GLOBAL VARIABLES=========================
 
 bool done = false, render = false, explosion = false;
+
 bool lockKamikase = false, lockColocho = false, lockJefe = false;
-bool colision = false, initChaSta = false, notPlayed = true;
-bool tBeam = false,capturado = false,lockKamiDispa = false;
+bool lockKamiDispa = false;
+bool enemyIsShooting = false;
+
+bool colision = false, initChaSta = false, notPlayed = true,difChaSta = true;
+bool tBeam = false,capturado = false;
+
+
 bool notInPos = false;
 bool inGameOverFirstTime = true;
 int score = 0;
 int vidas = 3;
-int status = JUEGO;
-int NUM_BULLETS = 2;
+int status = MENU;
+int NUM_BULLETS = 5;
 int NUM_ENEMIES = 10;
 int muertos = 0,nivel = 1, speed = 2 , segundosChaSta = 26 ;
 int scoreChaSta = 0;
+int velocidadAtaque = 50000;
 
-bool enemyIsShooting = false;
+
 bool animacionTerminada = false;
 
+ALLEGRO_SAMPLE *bgSound;
+ALLEGRO_SAMPLE *yellSound;
+ALLEGRO_SAMPLE *shotSound;
+ALLEGRO_SAMPLE *boomSound;
+ALLEGRO_SAMPLE *gameoverSound;
+ALLEGRO_SAMPLE *captureSound;
 
-ALLEGRO_SAMPLE *bgSound=NULL;
-ALLEGRO_SAMPLE *yellSound=NULL;
-ALLEGRO_SAMPLE *shotSound=NULL;
 ALLEGRO_SAMPLE_INSTANCE *songInstance = NULL;
+
+ALLEGRO_BITMAP *imagen_jugador;
+ALLEGRO_BITMAP *imagen_explosion;
 
 void limpiarTeclas(){
     keys[LEFT] = false;
@@ -39,6 +52,29 @@ void limpiarTeclas(){
     keys[ENTER]= false;
 }
 
+bool isChaSta(int nivel){
+    return nivel%4==0;
+}
+
+void liberarLocks(){
+    enemyIsShooting = false;
+    lockKamikase = false;
+    lockColocho = false;
+    lockKamiDispa = false;
+    lockJefe = false;
+}
+
+void initConfig(){
+    score = 0;
+    vidas = 3;
+    muertos = 0;
+    nivel = 1;
+    speed = 2;
+    segundosChaSta = 26 ;
+    scoreChaSta = 0;
+    velocidadAtaque = 50000;
+}
+
 int bbcollision(int b1_x, int b1_y, int b1_w, int b1_h, int b2_x, int b2_y, int b2_w, int b2_h){
     if ((b1_x > b2_x + b2_w - 1) || // is b1 on the right side of b2?
         (b1_y > b2_y + b2_h - 1) || // is b1 under b2?
@@ -48,6 +84,15 @@ int bbcollision(int b1_x, int b1_y, int b1_w, int b1_h, int b2_x, int b2_y, int 
         return 0; // no collision
     }
     return 1; // collision
+}
+
+void limpiarBalasDePantalla(Enemy *e2,Enemy *e4, Bullet b[]){
+    limpiarBullets(e2,8);
+    limpiarBullets(e4,4);
+
+	for(int i = 0; i < NUM_BULLETS; i++){
+		b[i].live = false;
+	}
 }
 
 
@@ -82,15 +127,33 @@ int main(){
     // FONT DEL PROGRAMA.
 	ALLEGRO_FONT *font = al_load_ttf_font("fonts/Sarpanch-SemiBold.ttf",30,0 );
 	ALLEGRO_FONT *font_copy = al_load_ttf_font("fonts/Sarpanch-SemiBold.ttf",20,0 );
+	// 50 30 20 15 10
+	ALLEGRO_FONT *font50 = al_load_ttf_font("fonts/pirulen.ttf",50,0 );
+	ALLEGRO_FONT *font30 = al_load_ttf_font("fonts/pirulen.ttf",30,0 );
+	ALLEGRO_FONT *font20 = al_load_ttf_font("fonts/pirulen.ttf",20,0 );
+	ALLEGRO_FONT *font15 = al_load_ttf_font("fonts/pirulen.ttf",15,0 );
+	ALLEGRO_FONT *font10 = al_load_ttf_font("fonts/pirulen.ttf",10,0 );
+
+	ALLEGRO_BITMAP *ENM1 = al_load_bitmap("img/En01.PNG");
+	ALLEGRO_BITMAP *ENM2 = al_load_bitmap("img/En02.PNG");
+	ALLEGRO_BITMAP *ENM3 = al_load_bitmap("img/En03.PNG");
+	ALLEGRO_BITMAP *ENM4 = al_load_bitmap("img/En04.PNG");
+	ALLEGRO_BITMAP *JEFE = al_load_bitmap("img/jefe1.PNG");
+	ALLEGRO_BITMAP *JEFE2 = al_load_bitmap("img/jefe2.PNG");
 
 
     al_install_audio();
     al_init_acodec_addon();
     al_reserve_samples(3);
 
-    bgSound = mainsound;
-    yellSound = ow;
-    shotSound = boing;
+    bgSound = al_load_sample( "sounds/main.wav" );
+    yellSound=al_load_sample( "sounds/ow.wav" );
+    shotSound=al_load_sample( "sounds/fire.wav" );
+    boomSound=al_load_sample( "sounds/boom.wav" );
+    captureSound=al_load_sample( "sounds/capture.wav" );
+    gameoverSound=al_load_sample( "sounds/Game_Over.wav" );
+
+
     songInstance = al_create_sample_instance(bgSound);
 
 	al_set_sample_instance_playmode(songInstance, ALLEGRO_PLAYMODE_LOOP);
@@ -100,6 +163,8 @@ int main(){
 
     // VARIABLES DEL JUEGO ========================
     bg = al_load_bitmap("img/sp1.jpg");
+    imagen_jugador = al_load_bitmap("img/zero.PNG");
+    imagen_explosion = al_load_bitmap("img/explode.png");
 
     SpaceShip nave_jugador;
     Enemy enemies1[10];
@@ -107,7 +172,7 @@ int main(){
     Enemy enemies3[10];
     Enemy enemies4[10];
     Enemy jefe1[2];
-    Bullet bullets[2];
+    Bullet bullets[NUM_BULLETS];
     Tbeam tbeam;
 
 
@@ -121,11 +186,11 @@ int main(){
     bool keyPressed = false;
     bool animacion = true;
     bool animacion2 = true;
-    bool chaStage = false;
     int iniciarMovs = true;
 
 
     // INICIALIZAR OBJETOS====================
+
     InitShip(nave_jugador);
     InitBullet(bullets, NUM_BULLETS);
     InitTbeam(tbeam);
@@ -146,24 +211,15 @@ int main(){
 
 	al_start_timer(timer);
 
-    int movimientos=1;
     int ataque;
 
+    ALLEGRO_EVENT ev;
 	while(!done){
 
-		ALLEGRO_EVENT ev;
+
 		al_wait_for_event(event_queue, &ev);
 
         al_play_sample_instance(songInstance);
-
-
-
-
-
-
-
-
-
 
 		if (status == MENU){
             //==============================================
@@ -206,6 +262,7 @@ int main(){
                 if (keyPressed){
                     if (keys[ENTER]){
                         if (seleccion == JUGAR){
+                            initConfig();
                             status = JUEGO;
                         }else if (seleccion == ACERCA){
                             status = DESCRIPCION;
@@ -243,18 +300,17 @@ int main(){
                 }
             }
 
+
             //==============================================
             //RENDER
             //==============================================
             if(render && al_is_event_queue_empty(event_queue))
             {
                 render = false;
-
-                al_draw_text(font(50), GREEN, WIDTH/2 -140,HEIGHT/2 - 130, 0, "GALAGA");
-                al_draw_text(font(30), cJugar, WIDTH/2 -70,HEIGHT/2 - 60, 0, "Jugar");
-                al_draw_text(font(30), cAcerca, WIDTH/2 -90,HEIGHT/2 -20, 0, "Acerca");
-                al_draw_text(font(30), cSalir, WIDTH/2 -65,HEIGHT/2 + 20, 0, "Salir");
-
+                al_draw_text(font50, GREEN, WIDTH/2 -140,HEIGHT/2 - 130, 0, "GALAGA");
+                al_draw_text(font30, cJugar, WIDTH/2 -70,HEIGHT/2 - 60, 0, "Jugar");
+                al_draw_text(font30, cAcerca, WIDTH/2 -90,HEIGHT/2 -20, 0, "Acerca");
+                al_draw_text(font30, cSalir, WIDTH/2 -65,HEIGHT/2 + 20, 0, "Salir");
                 al_flip_display();
                 al_clear_to_color(al_map_rgb(0,0,0));
             }
@@ -285,18 +341,18 @@ int main(){
             {
                 render = false;
 
-                al_draw_text(font(30), GREEN, WIDTH/2 -130,HEIGHT/2 - 200, 0, "Descripcion: ");
-                al_draw_text(font(20), GRAY2, 80 ,70, 0, "Dispara a las naves enemigas");
-                al_draw_text(font(20), GRAY2, 50 ,90, 0, "antes de que lancen sus ataques");
-                al_draw_text(font(20), GRAY2, 210 ,110, 0, "y te derriben!");
+                al_draw_text(font30, GREEN, WIDTH/2 -130,HEIGHT/2 - 200, 0, "Descripcion: ");
+                al_draw_text(font20, GRAY2, 80 ,70, 0, "Dispara a las naves enemigas");
+                al_draw_text(font20, GRAY2, 50 ,90, 0, "antes de que lancen sus ataques");
+                al_draw_text(font20, GRAY2, 210 ,110, 0, "y te derriben!");
 
-                al_draw_text(font(30), GREEN, WIDTH/2 -160,140, 0, "Instrucciones: ");
-                al_draw_text(font(20), GRAY2, 40,170, 0, "Flechas del cursor para moverte");
-                al_draw_text(font(20), GRAY2, 30,190, 0, "y barra espaciadora para disparar.");
+                al_draw_text(font30, GREEN, WIDTH/2 -160,140, 0, "Instrucciones: ");
+                al_draw_text(font20, GRAY2, 40,170, 0, "Flechas del cursor para moverte");
+                al_draw_text(font20, GRAY2, 30,190, 0, "y barra espaciadora para disparar.");
 
-                al_draw_text(font(30), GREEN, 110,250, 0, "DESARROLLADORES:");
-                al_draw_text(font(30), GRAY_SELECTED, 85,280, 0, "Daniel Solis Mendez");
-                al_draw_text(font(30), GRAY_SELECTED, 60,310, 0, "Melvin Elizondo Perez");
+                al_draw_text(font30, GREEN, 110,250, 0, "DESARROLLADORES:");
+                al_draw_text(font30, GRAY_SELECTED, 85,280, 0, "Daniel Solis Mendez");
+                al_draw_text(font30, GRAY_SELECTED, 60,310, 0, "Melvin Elizondo Perez");
 
                 al_draw_text(font_copy, GRAY, 70,440, 0, "BADSA Corp | Todos los derechos reservados 2014");
 
@@ -324,6 +380,7 @@ int main(){
            if(ev.type == ALLEGRO_EVENT_KEY_DOWN){
                 switch(ev.keyboard.keycode){
                 case ALLEGRO_KEY_ESCAPE:
+
                     done = true;
                     break;
                 case ALLEGRO_KEY_LEFT:
@@ -336,7 +393,7 @@ int main(){
                     break;
                 case ALLEGRO_KEY_SPACE:
                     keys[SPACE] = true;
-                    if (!animacion2) FireBullet(bullets, NUM_BULLETS, nave_jugador);
+                    if (!animacion2 && !capturado) FireBullet(bullets, NUM_BULLETS, nave_jugador);
                     break;
                 }
             }
@@ -374,22 +431,19 @@ int main(){
                     ataque = rand()%1000;
                     if (ataque>=0 and ataque<50){
                         if (!lockJefe)
-                            BossEnemy(jefe1,2,&nave_jugador);
+                           BossEnemy(jefe1,2,&nave_jugador);
                     }else if (ataque>=50 and ataque<400){
-                        if (!enemyIsShooting){
-                            ShooterEnemy(enemies2, 8);
-                        }
+                        if (!enemyIsShooting)
+                           ShooterEnemy(enemies2, 8);
                     }else if (ataque>=400 and ataque<600){
-                        if (!lockKamikase){
+                        if (!lockKamikase)
                             KamikaseEnemy(enemies1,10,&nave_jugador);
-                        }
                     }else if (ataque>=600 and ataque<800){
-                        if (!lockColocho){
+                        if (!lockColocho)
                             ColochoEnemy(enemies3,6,&nave_jugador);
-                        }
                     }else if (ataque>=800 and ataque<1000){
-                        //if (!lockKamiDispa)
-                            //KamiDispaEnemy(enemies4,4,&nave_jugador);
+                        if (!lockKamiDispa)
+                            KamiDispaEnemy(enemies4,4,&nave_jugador);
                     }
 
                     CollideBullet(bullets,NUM_BULLETS,enemies1,NUM_ENEMIES);
@@ -402,6 +456,7 @@ int main(){
 
                 if (!animacion2 && !colision && !capturado){
                     CollideBulletSpaceship(enemies2,8,nave_jugador);
+                    CollideBulletSpaceship(enemies4,4,nave_jugador);
 
                     CollideEnemiesSpaceship(enemies1,10,nave_jugador);
                     CollideEnemiesSpaceship(enemies2,8,nave_jugador);
@@ -420,7 +475,7 @@ int main(){
                 render = false;
 
                 // INFORMACION DEL JUEGO Y BG
-                if (vidas==0){status = GAME_OVER ; limpiarTeclas();}
+                if (vidas==0){lockKamiDispa= false; status = GAME_OVER ; limpiarTeclas();}
 
                 if (animacion){
                     movEnemies(enemies1,10,1);
@@ -433,8 +488,10 @@ int main(){
 
                 // Objetos de la Ventana
                 al_draw_bitmap(bg, 0, 0, 0);
-                al_draw_bitmap(al_load_bitmap("img/zero.PNG"), 5,440,0);
+                al_draw_bitmap(imagen_jugador, 5,440,0);
+
                 al_draw_text(font, al_map_rgb(255,255,255), 40,430, 0, "X");
+
                 sprintf(vidas_char,"%d",vidas);
                 al_draw_text(font, al_map_rgb(255,255,255), 60,430, 0, vidas_char);
                 al_draw_text(font, al_map_rgb(255,255,255), WIDTH/2 + 180, 0,ALLEGRO_ALIGN_CENTRE, "Score");
@@ -442,9 +499,9 @@ int main(){
                 sprintf(vartext,"%d",score);
                 al_draw_text(font, al_map_rgb(255,255,255), WIDTH/2 + 230, 0, 0, vartext);
 
-                al_draw_text(font(15), al_map_rgb(255,255,255), 550, 450,ALLEGRO_ALIGN_CENTRE, "Nivel");
+                al_draw_text(font15, al_map_rgb(255,255,255), 550, 450,ALLEGRO_ALIGN_CENTRE, "Nivel");
                 sprintf(nivel_char,"%d",nivel);
-                al_draw_text(font(20), al_map_rgb(255,255,255), 600,445, 0, nivel_char);
+                al_draw_text(font20, al_map_rgb(255,255,255), 600,445, 0, nivel_char);
 
                 if (tBeam){
                     DrawTbeam(jefe1,&nave_jugador, tbeam,2);
@@ -463,7 +520,6 @@ int main(){
                 DrawBullet(bullets, NUM_BULLETS);
 
                 DrawEnemies(enemies1,10);
-                //al_draw_rectangle(enemies1[9].x,enemies1[9].y,enemies1[9].x+enemies1[9].w,enemies1[9].y+enemies1[9].h,GRAY,1);
                 DrawEnemies(enemies2,8);
                 DrawEnemies(enemies3,6);
                 DrawEnemies(enemies4,4);
@@ -473,33 +529,38 @@ int main(){
                     if (animacion2) animacion2 = checkAnimationStatus(enemies1, enemies2, enemies3, enemies4, jefe1);
                     if (!animacion2){
                         DrawEnemyBullets(enemies2,8);
+                        DrawEnemyBullets(enemies4,4);
                     }
                 }
 
                 if (allDied(enemies1,10,enemies2,8,enemies3,6,enemies4,4,jefe1,2)){
-                    nivel++;
-                    muertos=0;
-                    speed++;speed++;
-                    limpiarBullets(enemies2,8);
-                    InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
-                    InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
-                    InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
-                    InitEnemies(enemies4,speed,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
-                    InitEnemies(jefe1,speed,JEFE,JEFE2,true,2,200,60);
-                    animacion = true;
-                    animacion2 = true;
-                    enemyIsShooting = false;
-                    lockKamikase = false;
-                    lockColocho = false;
-                }
+                    limpiarBalasDePantalla(enemies2,enemies4,bullets);
+                    if (!isChaSta(nivel+1)){
+                        nivel++;
+                        muertos=0;
+                        speed++;speed++;
+                        tBeam = false;
+                        velocidadAtaque -= 5000;
+                        //limpiarBalasDePantalla(enemies2,enemies4,bullets);
+                        InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
+                        InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
+                        InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
+                        InitEnemies(enemies4,speed,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
+                        InitEnemies(jefe1,speed,JEFE,JEFE2,true,2,200,60);
+                        animacion = true;
+                        animacion2 = true;
+                        // Liberar locks
+                        liberarLocks();
+                    }else{
+                        //notPlayed = false;
+                        initChaSta = false;
+                        animacion = true;
+                        animacion2= true;
+                        scoreChaSta = 0;
+                        status = CHALLENGING_STAGE;
+                    }
 
-                if (nivel%4 == 0 and notPlayed){
-                    initChaSta = false;
-                    notPlayed = false;
-                    animacion2= true;
-                    scoreChaSta = 0;
-                    status = CHALLENGING_STAGE;
-                }else if(nivel%4 != 0){notPlayed = true;}
+                }
 
                 al_flip_display();
                 al_clear_to_color(al_map_rgb(0,0,0));
@@ -528,12 +589,12 @@ int main(){
 
 		    if (!initChaSta){
                 iniciarMovs = true;
-                iniciarTempo();
                 InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
                 InitEnemies(enemies2,speed,ENM2,NULL,false,10,0,180,WIDTH/2+100);
                 InitEnemies(enemies3,speed,ENM3,NULL,false,10,0,140,WIDTH);
                 InitEnemies(enemies4,speed,ENM4,NULL,false,10,0,100,(WIDTH/2)+100);
                 initChaSta = true;
+                iniciarTempo();
 		    }
 
             if(ev.type == ALLEGRO_EVENT_KEY_DOWN){
@@ -603,7 +664,7 @@ int main(){
 
                 // Objetos de la Ventana
                 al_draw_bitmap(bg, 0, 0, 0);
-                al_draw_bitmap(al_load_bitmap("img/zero.PNG"), 5,440,0);
+                al_draw_bitmap(imagen_jugador, 5,440,0);
                 al_draw_text(font, al_map_rgb(255,255,255), 40,430, 0, "X");
                 sprintf(vidas_char,"%d",vidas);
                 al_draw_text(font, al_map_rgb(255,255,255), 60,430, 0, vidas_char);
@@ -613,14 +674,14 @@ int main(){
                 sprintf(vartext,"%d",score);
                 al_draw_text(font, al_map_rgb(255,255,255), WIDTH/2 +230, 0, 0, vartext);
 
-                al_draw_text(font(10), al_map_rgb(255,255,255), WIDTH/2 + 175, 40,ALLEGRO_ALIGN_CENTRE, "Score");
+                al_draw_text(font10, al_map_rgb(255,255,255), WIDTH/2 + 175, 40,ALLEGRO_ALIGN_CENTRE, "Score");
                 char vartext2[10];
                 sprintf(vartext2,"%d",scoreChaSta);
-                al_draw_text(font(10), al_map_rgb(255,255,255), WIDTH/2 +205, 40, 0, vartext2);
+                al_draw_text(font10, al_map_rgb(255,255,255), WIDTH/2 +205, 40, 0, vartext2);
 
 
                 sprintf(var,"%d",segundosChaSta);
-                al_draw_text(font(20), al_map_rgb(255,255,255), WIDTH/2,10, 0, var);
+                al_draw_text(font20, al_map_rgb(255,255,255), WIDTH/2,10, 0, var);
 
                 al_draw_bitmap(nave_jugador.image, nave_jugador.x - nave_jugador.w / 2, nave_jugador.y - nave_jugador.h / 2, 0);
 
@@ -630,7 +691,7 @@ int main(){
                 DrawBullet(bullets, NUM_BULLETS);
 
 
-                al_draw_text(font(15), al_map_rgb(255,255,255), 500, 450,ALLEGRO_ALIGN_CENTRE, "Challenging Stage");
+                al_draw_text(font15, al_map_rgb(255,255,255), 500, 450,ALLEGRO_ALIGN_CENTRE, "Challenging Stage");
 
                 DrawEnemies(enemies1,10);
                 DrawEnemies(enemies2,10);
@@ -653,21 +714,25 @@ int main(){
 
 
                 if (segundosChaSta==0 || allDied(enemies1,10,enemies2,10, enemies3,10, enemies4,10)){
-                    //limpiarBullets(enemies2,8);
                     if (segundosChaSta==0){
                         score += scoreChaSta;
-                    }else score += 10000;
+                    }else{
+                        score += 10000;
+                    }
+                    segundosChaSta = 26;
                     InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
                     InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
                     InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
                     InitEnemies(enemies4,speed,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
                     InitEnemies(jefe1,speed,JEFE,JEFE2,true,2,200,60);
+
                     animacion = true;
                     animacion2 = true;
-                    enemyIsShooting = false;
-                    lockColocho = false;
-                    lockKamikase = false;
+
+                    liberarLocks();
+                    nivel++;
                     status = JUEGO;
+
                 }
 
                 al_flip_display();
@@ -690,7 +755,7 @@ int main(){
 
 		}else if(status == GAME_OVER ){
 		    if (inGameOverFirstTime){
-                al_play_sample(gameover, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
+                al_play_sample(gameoverSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
                 inGameOverFirstTime=false;
             }
             //==============================================
@@ -722,20 +787,19 @@ int main(){
                 render = true;
                 if (keys[ENTER]){
                     if (seleccion == JUGAR){
+                        limpiarBalasDePantalla(enemies2,enemies4,bullets);
+                        liberarLocks();
+                        initConfig();
                         inGameOverFirstTime = true;
-                        speed = 2;
+                        tBeam = false;
                         InitEnemies(enemies1,speed,ENM1,NULL,false,10,0,220,WIDTH/2);
                         InitEnemies(enemies2,speed,ENM2,NULL,false,8,50,180,WIDTH/2+100);
                         InitEnemies(enemies3,speed,ENM3,NULL,false,6,100,140,WIDTH);
                         InitEnemies(enemies4,speed,ENM4,NULL,false,4,150,100,(WIDTH/2)+100);
                         InitEnemies(jefe1,speed,JEFE,JEFE2,true,2,200,60);
-                        limpiarTeclas();
+
                         animacion = true;
                         animacion2 = true;
-                        nivel = 1;
-                        muertos = 0;
-                        vidas = 3;
-                        score = 0;
                         status = JUEGO;
                     }else if (seleccion == SALIR){
                         done=true;
@@ -762,9 +826,9 @@ int main(){
             {
                 render = false;
 
-                al_draw_text(font(50), GREEN, WIDTH/2-200 ,HEIGHT/2-50 , 0, "GAME OVER");
-                al_draw_text(font(15), cJugar, WIDTH/2-50 ,HEIGHT/2+10, 0, "Reintentar");
-                al_draw_text(font(15), cSalir, WIDTH/2-20 ,HEIGHT/2+40 , 0, "Salir");
+                al_draw_text(font50, GREEN, WIDTH/2-200 ,HEIGHT/2-50 , 0, "GAME OVER");
+                al_draw_text(font15, cJugar, WIDTH/2-50 ,HEIGHT/2+10, 0, "Reintentar");
+                al_draw_text(font15, cSalir, WIDTH/2-20 ,HEIGHT/2+40 , 0, "Salir");
 
                 al_flip_display();
                 al_clear_to_color(al_map_rgb(0,0,0));
@@ -778,22 +842,28 @@ int main(){
     }
 
 
+    al_destroy_font(font);
+    al_destroy_font(font50);
+    al_destroy_font(font30);
+    al_destroy_font(font20);
+    al_destroy_font(font15);
+    al_destroy_font(font10);
+    al_destroy_font(font_copy);
 
-
-
-
-    for (int i =0;i<10;i++){
+    for (int i=0;i<10;i++){
         al_destroy_bitmap(enemies1[i].image);
         al_destroy_bitmap(enemies2[i].image);
         al_destroy_bitmap(enemies3[i].image);
         al_destroy_bitmap(enemies4[i].image);
         al_destroy_bitmap(jefe1[i].image);
     }
-    //al_destroy_sample()
+    al_destroy_sample(bgSound);
+    al_destroy_sample(shotSound);
+    al_destroy_sample(yellSound);
+
 	al_destroy_event_queue(event_queue);
 	al_destroy_timer(timer);
 	al_destroy_display(display);						//destroy our display object
 
 	return 0;
 }
-

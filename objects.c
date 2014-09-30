@@ -80,6 +80,95 @@ void DrawEnemies(Enemy *enemies, int size){
             al_draw_bitmap(enemies[i].image, enemies[i].x, enemies[i].y, 0);
 }
 
+
+void  * disparaEnemigo( void * arg){
+    Enemy *e =(Enemy *) arg;
+
+    e->bullet.y = e->y+e->h;
+    e->bullet.x = e->x+e->w/2;
+    e->bullet.live = true;
+    while(e->bullet.y < 480 and e->bullet.live){
+        usleep(50000);
+        e->bullet.y += e->bullet.speed;
+    }
+    e->bullet.live = false;
+    //enemyIsShooting = false;
+    if (e->opcional!=-1){
+        enemyIsShooting = false;
+        pthread_exit(NULL);
+    }
+        //pthread_cancel(pthread_self(),0);
+}
+
+
+void  * disparaEnemigo2( void * arg){
+    Enemy *e =(Enemy *) arg;
+
+    e->bullet.y = e->y+e->h;
+    e->bullet.x = e->x+e->w/2;
+    e->bullet.live = true;
+    while(e->bullet.y < 480 and e->bullet.live){
+        usleep(50000);
+        e->bullet.y += e->bullet.speed;
+    }
+    e->bullet.live = false;
+    //pthread_exit(NULL);
+}
+
+
+void  * disparaKami( void * arg){
+    Enemy *e =(Enemy *) arg;
+
+    e->bullet.y = e->y+e->h;
+    e->bullet.x = e->x+e->w/2;
+    e->bullet.live = true;
+    while(e->bullet.y < 480 and e->bullet.live){
+        usleep(50000);
+        e->bullet.y += e->bullet.speed;
+    }
+    e->bullet.live = false;
+    //lockKamiDispa=false;
+    //pthread_kill(pthread_self(),0);
+    pthread_exit(NULL);
+}
+
+/*
+void *animacionEntrada (void *arguments){
+    Enemy *e =(Enemy *) arguments;
+    int direc=false;
+    if (e->x < e->x_fin){
+        direc= true;
+    }
+    while(e->y>e->y_fin){
+        usleep(50000);
+        e->y -= e->speed;
+    }
+    e->y -=5;
+    while (e->y < e->y_fin){
+        int ran = rand();
+        usleep(5000+ran%10000);
+        e->y += e->speed;
+        if (direc){
+            while (e->x < e->x_fin){
+                usleep(5000+ran%10000);
+                e->x += e->speed;
+            }
+        }else {
+            while (e->x > e->x_fin){
+                usleep(5000+ran%10000);
+                e->x -= e->speed;
+            }
+        }
+    }
+    e->y = e->y_fin;
+    e->x = e->x_fin;
+    if (e->opcional!=-1){
+        pthread_exit(NULL);
+    }
+        //pthread_kill(pthread_self(),0);
+}
+*/
+
 void *animacionEntrada (void *arguments){
     Enemy *e =(Enemy *) arguments;
     int direc=false;
@@ -134,6 +223,7 @@ void *movTriang (void *arguments){
         }
     }
     animacionEntrada((void*)e);
+    //pthread_kill(pthread_self(),0);
     pthread_exit(NULL);
 }
 void *movCirc (void *arguments){
@@ -148,6 +238,7 @@ void *movCirc (void *arguments){
         }
     }
     animacionEntrada((void*)e);
+    //pthread_kill(pthread_self(),0);
     pthread_exit(NULL);
 }
 
@@ -170,6 +261,7 @@ void *movCuadrado (void *arguments){
 
     }
     animacionEntrada((void*)e);
+    //pthread_kill(pthread_self(),0);
     pthread_exit(NULL);
 }
 
@@ -188,7 +280,7 @@ void FireBullet(Bullet bullet[], int size, SpaceShip &ship){
 			bullet[i].x = ship.x;
 			bullet[i].y = ship.y-10;
 			bullet[i].live = true;
-			al_play_sample(boing, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
+			al_play_sample(shotSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 			return;
         }
 	}
@@ -213,7 +305,7 @@ void CollideBullet(Bullet bullet[], int bSize, Enemy enemies[], int eSize){
 					if( bbcollision(bullet[i].x , bullet[i].y, bullet[i].r, bullet[i].r,
                                     enemies[j].x, enemies[j].y, enemies[j].w, enemies[j].h)){
 						bullet[i].live = false;
-						al_play_sample(boom, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
+						al_play_sample(boomSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
 						if (enemies[j].isBoss){
                             enemies[j].cantVidas--;
                             if (enemies[j].cantVidas==0){
@@ -226,22 +318,18 @@ void CollideBullet(Bullet bullet[], int bSize, Enemy enemies[], int eSize){
                             else if (status == CHALLENGING_STAGE) scoreChaSta +=100;
 						}else{
                             enemies[j].live = false;
-                            //colision=true; // solo para probar
                             muertos++;
                             if (status==JUEGO) score += 7;
                             else if (status == CHALLENGING_STAGE) scoreChaSta +=100;
 						}
 						return;
-					}//else colision=false;
+					}
 				}
 			}
 		}
 	}
 }
-//============================================================================================
-/*
-Prueba para la curva de bezier
-*/
+
 
 Point2D PointOnCubicBezier( Point2D* cp, float t )
 {
@@ -283,42 +371,31 @@ void  curveBezierAux( Point2D* cp, int numberOfPoints, Point2D *curve, Enemy *e 
     int	  i;
 
     dt = 1.0 / ( numberOfPoints - 1 );
-
+    int disparoEnPunto = rand()%numberOfPoints;
     for( i = 0; i < numberOfPoints; i++){
-        if (i==25){
-            pthread_t h1;
-            pthread_create (&h1, NULL, disparaEnemigo, (void *) &e );
-        }
+
         curve[i] = PointOnCubicBezier( cp, i*dt );
-        e->x=(int)curve[i].x; e->y=(int)curve[i].y ;
-            usleep(50000);
+        e->x=(int)curve[i].x;
+        e->y=(int)curve[i].y ;
+        usleep(velocidadAtaque);
+        if (i==disparoEnPunto and e->opcional==-1){
+            pthread_t h;
+            pthread_create(&h,NULL,disparaEnemigo, (void *) e );
         }
-    /*
-    for( i = numberOfPoints-1; i>0; i--){
-        curve[i] = PointOnCubicBezier( cp, i*dt );
-        e->x=(int)curve[i].x; e->y=(int)curve[i].y ;
-            usleep(50000);
-    }*/
+    }
 }
 
-
-void  * curveBezier( void * arg){
-    bool KamiDispa = false;
+void  * ColochoEnemyAux( void * arg){
     Enemy *e = (Enemy *) arg;
-    if (e->opcional>15000){
-        e->opcional -= 5000;
-        KamiDispa = true;
-    }
     e->atacando = true;
     int x =e->x_fin;
     int y=e->y_fin;
-    int navePos = e->opcional%10000;
-    int difer1=150, difer2=50, difer3=0;
-    Point2D curve[50]; //= (Point2D*)malloc(sizeof(Point2D) *50);
+    int difer1=150;
+    int difer2=50;
+    Point2D curve[50];
     Point2D cp[4];
     Point2D temp[4];
-    if (e->opcional/10000)
-        difer3=100;
+
     if(e->x_fin>=(WIDTH)/2){
         difer1*=-1;
         difer2*=-1;
@@ -329,8 +406,8 @@ void  * curveBezier( void * arg){
     cp[1].y=y-50;
     cp[2].x=cp[1].x;
     cp[2].y=cp[1].y+200;
-    cp[3].x=navePos;
-    cp[3].y=420 + difer3 + 20;
+    cp[3].x=e->opcional;
+    cp[3].y=420 + 20;
     temp[0].x=cp[3].x;
     temp[0].y=cp[3].y;
     temp[1].x=cp[3].x+difer2;//reflejar es a la derecha o izq
@@ -339,26 +416,92 @@ void  * curveBezier( void * arg){
     temp[2].y=temp[1].y;
     temp[3].x=cp[3].x+(6*difer2);
     temp[3].y=cp[3].y+200;
+    e->opcional = 0;
+    curveBezierAux(cp,50, curve,e);
+    curveBezierAux(temp,50, curve,e);
+    e->x=e->x_fin;
+    e->y=-20;
 
-    if (KamiDispa){
-        curveBezierAux(cp,50, curve,e,true);
-        //lockKamiDispa = false;
+    pthread_t h;
+    pthread_create (&h, NULL, animacionEntrada, (void *) e );
+    pthread_join(h,NULL);
+
+    e->atacando=false;
+    lockColocho=false;
+
+    pthread_exit(NULL);
+}
+void  * KamikaseEnemyAux( void * arg){
+    Enemy *e = (Enemy *) arg;
+    e->atacando = true;
+    int x =e->x_fin;
+    int y=e->y_fin;
+    int difer1=150;
+    int difer2=50;
+    Point2D curve[50]; //= (Point2D*)malloc(sizeof(Point2D) *50);
+    Point2D cp[4];
+    //lockKamikase=true;
+    if(e->x_fin>=(WIDTH)/2){
+        difer1*=-1;
+        difer2*=-1;
     }
-    else curveBezierAux(cp,50, curve,e);
+    cp[0].x=x;
+    cp[0].y=y;
+    cp[1].x=x+difer1;
+    cp[1].y=y-50;
+    cp[2].x=cp[1].x;
+    cp[2].y=cp[1].y+200;
+    cp[3].x=e->opcional;
+    cp[3].y=420 +120;
+    e->opcional = 0;
+    curveBezierAux(cp,50, curve,e);
 
-    //if (KamiDispa)
-     //   lockKamiDispa = false;
+    e->x=e->x_fin;
+    e->y=-20;
 
-    if(difer3==0){
-        curveBezierAux(temp,50, curve,e);
-        lockColocho = false;
-    }else{
-        lockKamikase = false;
+    pthread_t h;
+    pthread_create (&h, NULL, animacionEntrada, (void *) e );
+    pthread_join(h,NULL);
+    e->atacando=false;
+    lockKamikase = false;
+
+    pthread_exit(NULL);
+}
+
+void  * KamiDispaEnemyAux( void * arg){
+    Enemy *e = (Enemy *) arg;
+    e->atacando = true;
+    int x =e->x_fin;
+    int y =e->y_fin;
+    int difer1=150;
+    int difer2=50;
+    Point2D curve[50]; //= (Point2D*)malloc(sizeof(Point2D) *50);
+    Point2D cp[4];
+    //lockKamiDispa=true;
+    if(e->x_fin>=(WIDTH)/2){
+        difer1*=-1;
+        difer2*=-1;
     }
+    cp[0].x=x;
+    cp[0].y=y;
+    cp[1].x=x+difer1;
+    cp[1].y=y-50;
+    cp[2].x=cp[1].x;
+    cp[2].y=cp[1].y+200;
+    cp[3].x=e->opcional;
+    cp[3].y=420 +120;
+
+    e->opcional = -1;
+
+    curveBezierAux(cp,50, curve,e,true);
+
+
     e->x=e->x_fin;
     e->y=-20;
     e->atacando=false;
     animacionEntrada((void *)e);
+    lockKamiDispa = false;
+    //pthread_kill(pthread_self(),0);
     pthread_exit(NULL);
 
 }
@@ -377,10 +520,10 @@ void KamikaseEnemy(Enemy enemies[],int size,SpaceShip *s){
         while (!enemies[nrnd].live || enemies[nrnd].atacando ){ //
             nrnd = rand()%size;
         }
-        enemies[nrnd].opcional=s->x+10000;
+        enemies[nrnd].opcional=s->x;
         lockKamikase = true;
         pthread_t h;
-        pthread_create (&h, NULL, curveBezier, (void *) &enemies[nrnd]);
+        pthread_create (&h, NULL, KamikaseEnemyAux, (void *) &enemies[nrnd]);
     }
 }
 
@@ -402,7 +545,7 @@ void ColochoEnemy(Enemy enemies[],int size, SpaceShip *s){
         enemies[nrnd].opcional=s->x;
         lockColocho = true;
         pthread_t h;
-        pthread_create (&h, NULL, curveBezier, (void *) &enemies[nrnd]);
+        pthread_create (&h, NULL, ColochoEnemyAux, (void *) &enemies[nrnd]);
     }
 }
 
@@ -419,10 +562,10 @@ void KamiDispaEnemy(Enemy enemies[],int size,SpaceShip *s){
         while (!enemies[nrnd].live || enemies[nrnd].atacando ){ //
             nrnd = rand()%size;
         }
-        enemies[nrnd].opcional=s->x+15000;
+        enemies[nrnd].opcional=s->x;
         lockKamiDispa = true;
         pthread_t h;
-        pthread_create (&h, NULL, curveBezier, (void *) &enemies[nrnd]);
+        pthread_create (&h, NULL, KamiDispaEnemyAux, (void *) &enemies[nrnd]);
     }
 }
 
@@ -500,44 +643,11 @@ void movEnemies(Enemy *enemies, int size,int numMov, SpaceShip *s = NULL){
             else if (nrnd==1) pthread_create (&h[i], NULL, movCirc, (void *) &enemies[i] );
             else if (nrnd==2) pthread_create (&h[i], NULL, movCuadrado, (void *) &enemies[i] );
         }
-    /*
-    else if (numMov==5){
-        lockColocho = true;
-        bool disponibles=true;
-        int cant = 0;
-        for (int i =0;i<size;i++){
-            if (enemies[i].live) cant++;
-        }
-        if (cant==0) disponibles = false;
-
-        if (disponibles){
-            nrnd = rand()%size;
-            while (!enemies[nrnd].live || enemies[nrnd].bullet.live){
-                nrnd = rand()%size;
-            }
-            enemies[nrnd].opcional=s->x;
-            pthread_create (&h[nrnd], NULL, curveBezier, (void *) &enemies[nrnd]);
-        }
-    }
-    */
 }
 
 // MODIFICACIONES DESPUES DE PERDIDA DE ARCHIVOS OBJECTS.C Y OBJECTS.H
 
-void  * disparaEnemigo( void * arg){
-    Enemy *e =(Enemy *) arg;
 
-    e->bullet.y = e->y+e->h;
-    e->bullet.x = e->x+e->w/2;
-    e->bullet.live = true;
-    while(e->bullet.y < 480 and e->bullet.live){
-        usleep(50000);
-        e->bullet.y += e->bullet.speed;
-    }
-    e->bullet.live = false;
-    enemyIsShooting = false;
-    pthread_exit(NULL);
-}
 
 void ShooterEnemy(Enemy *enemies, int size){
     enemyIsShooting = true;
@@ -560,11 +670,12 @@ void ShooterEnemy(Enemy *enemies, int size){
 
 void * dibujarExplosion(void * arg){
     SpaceShip *e =(SpaceShip *) arg;
-    e->image=al_load_bitmap("img/explode.png");
+    e->image=imagen_explosion;
     usleep(500000);
-    e->image=al_load_bitmap("img/zero.PNG");
+    e->image=imagen_jugador;
     e->x=WIDTH/2;
     explosion = false;
+    //pthread_kill(pthread_self(),0);
     pthread_exit(NULL);
 }
 
@@ -580,7 +691,7 @@ void CollideBulletSpaceship(Enemy enemies[],int eSize,SpaceShip &ship){
                 pthread_t h1;
                 pthread_create (&h1, NULL, dibujarExplosion, (void *) &ship );
                 vidas--;
-                al_play_sample(ow, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
+                al_play_sample(yellSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
             }
             //return;
         }
@@ -638,7 +749,7 @@ void CollideEnemiesSpaceship(Enemy enemies[],int eSize,SpaceShip &ship){
                 explosion = true;
                 pthread_t h1;
                 pthread_create (&h1, NULL, dibujarExplosion, (void *) &ship );
-                al_play_sample(ow, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
+                al_play_sample(yellSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
                 vidas--;
                 //break;
             }
@@ -701,10 +812,12 @@ void * temporizador(void * arg){
         segundosChaSta--;
         sleep(1);
     }
+    //pthread_kill(pthread_self(),0);
     pthread_exit(NULL);
 }
 
 void iniciarTempo(){
+    segundosChaSta = 26;
     pthread_t h1;
     pthread_create (&h1, NULL, temporizador, NULL );
 }
@@ -737,6 +850,7 @@ void DrawTbeam(Enemy e[],SpaceShip *ship,Tbeam tbeam,int size){
                     al_draw_bitmap(tbeam.image,tbeam.x,tbeam.y, 0);
                     if (bbcollision(tbeam.x+30,tbeam.y,5,tbeam.h,ship->x-ship->w/2,ship->y+ship->h/2,ship->w,ship->h)){
                         capturado=true;
+                        al_play_sample(captureSound, 1.0, 0.0,1.0,ALLEGRO_PLAYMODE_ONCE,NULL);
                     }
                     if (capturado){
                         ship->x=tbeam.x+32;

@@ -12,8 +12,8 @@
   <line>Command: /home/melalonso/GALAGA/bin/Debug/Allegrito </line>
 </preamble>
 
-<pid>19069</pid>
-<ppid>1629</ppid>
+<pid>5373</pid>
+<ppid>1628</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -32,7 +32,7 @@
 
 <status>
   <state>RUNNING</state>
-  <time>00:00:00:00.496 </time>
+  <time>00:00:00:00.178 </time>
 </status>
 
 <error>
@@ -50,15 +50,15 @@
       <line>184</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a898 is 168 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334618 is 168 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -77,12 +77,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -102,15 +102,15 @@
       <line>192</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a804 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334584 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -129,12 +129,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -154,15 +154,15 @@
       <line>199</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a824 is 52 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x173345a4 is 52 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -181,12 +181,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -206,15 +206,15 @@
       <line>202</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a7f0 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334570 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -233,12 +233,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -266,15 +266,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a7f8 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334578 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -293,12 +293,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -334,15 +334,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a804 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334584 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -361,12 +361,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -402,15 +402,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a8d0 is 224 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334650 is 224 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -429,12 +429,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -462,15 +462,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a8c8 is 216 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334648 is 216 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -489,12 +489,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -514,15 +514,15 @@
       <line>205</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a7f8 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334578 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -541,12 +541,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -566,15 +566,15 @@
       <line>208</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a8a8 is 184 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334628 is 184 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -593,12 +593,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -626,15 +626,15 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x7f62a7f0 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17334570 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -653,12 +653,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406662</ip>
+      <ip>0x40842B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>633</line>
+      <line>808</line>
     </frame>
   </stack>
 </error>
@@ -678,15 +678,15 @@
       <line>184</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c558 is 168 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17344028 is 168 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -705,12 +705,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -730,15 +730,15 @@
       <line>192</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c4c4 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17343f94 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -757,12 +757,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -782,15 +782,15 @@
       <line>199</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c4e4 is 52 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17343fb4 is 52 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -809,12 +809,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -834,15 +834,15 @@
       <line>202</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c4b0 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17343f80 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -861,12 +861,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -894,15 +894,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c4b8 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17343f88 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -921,12 +921,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -962,15 +962,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c4c4 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17343f94 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -989,12 +989,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -1030,15 +1030,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c590 is 224 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17344060 is 224 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1057,12 +1057,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -1090,15 +1090,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c588 is 216 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17344058 is 216 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1117,12 +1117,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -1142,15 +1142,15 @@
       <line>205</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c4b8 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17343f88 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1169,12 +1169,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -1194,15 +1194,15 @@
       <line>208</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c568 is 184 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17344038 is 184 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1221,12 +1221,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -1254,15 +1254,15 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c4c4b0 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17343f80 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1281,12 +1281,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x406695</ip>
+      <ip>0x408456</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>634</line>
+      <line>809</line>
     </frame>
   </stack>
 </error>
@@ -1306,15 +1306,15 @@
       <line>184</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5b078 is 168 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352d98 is 168 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1333,12 +1333,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1358,15 +1358,15 @@
       <line>192</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5afe4 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352d04 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1385,12 +1385,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1410,15 +1410,15 @@
       <line>199</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5b004 is 52 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352d24 is 52 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1437,12 +1437,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1462,15 +1462,15 @@
       <line>202</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5afd0 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352cf0 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1489,12 +1489,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1522,15 +1522,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5afd8 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352cf8 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1549,12 +1549,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1590,15 +1590,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5afe4 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352d04 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1617,12 +1617,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1658,15 +1658,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5b0b0 is 224 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352dd0 is 224 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1685,12 +1685,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1718,15 +1718,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5b0a8 is 216 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352dc8 is 216 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1745,12 +1745,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1770,15 +1770,15 @@
       <line>205</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5afd8 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352cf8 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1797,12 +1797,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1822,15 +1822,15 @@
       <line>208</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5b088 is 184 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352da8 is 184 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1849,12 +1849,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1882,15 +1882,15 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x48c5afd0 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17352cf0 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1909,12 +1909,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066C8</ip>
+      <ip>0x408481</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>635</line>
+      <line>810</line>
     </frame>
   </stack>
 </error>
@@ -1934,15 +1934,15 @@
       <line>184</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84f18 is 168 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361918 is 168 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -1961,12 +1961,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -1986,15 +1986,15 @@
       <line>192</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84e84 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361884 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2013,12 +2013,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2038,15 +2038,15 @@
       <line>199</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84ea4 is 52 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x173618a4 is 52 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2065,12 +2065,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2090,15 +2090,15 @@
       <line>202</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84e70 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361870 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2117,12 +2117,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2150,15 +2150,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84e78 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361878 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2177,12 +2177,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2218,15 +2218,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84e84 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361884 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2245,12 +2245,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2286,15 +2286,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84f50 is 224 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361950 is 224 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2313,12 +2313,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2346,15 +2346,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84f48 is 216 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361948 is 216 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2373,12 +2373,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2398,15 +2398,15 @@
       <line>205</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84e78 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361878 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2425,12 +2425,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2450,15 +2450,15 @@
       <line>208</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84f28 is 184 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361928 is 184 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2477,12 +2477,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2510,15 +2510,15 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x1db84e70 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17361870 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2537,12 +2537,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x4066FB</ip>
+      <ip>0x4084AC</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>636</line>
+      <line>811</line>
     </frame>
   </stack>
 </error>
@@ -2562,15 +2562,15 @@
       <line>184</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1628 is 168 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17370548 is 168 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2589,12 +2589,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -2614,15 +2614,15 @@
       <line>192</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1594 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x173704b4 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2641,12 +2641,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -2666,15 +2666,15 @@
       <line>199</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d15b4 is 52 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x173704d4 is 52 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2693,12 +2693,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -2718,15 +2718,15 @@
       <line>202</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1580 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x173704a0 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2745,12 +2745,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -2778,15 +2778,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1588 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x173704a8 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2805,12 +2805,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -2846,15 +2846,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1594 is 20 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x173704b4 is 20 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2873,12 +2873,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -2914,15 +2914,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1660 is 224 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17370580 is 224 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -2941,12 +2941,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -2974,15 +2974,15 @@
       <line>203</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1658 is 216 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17370578 is 216 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -3001,12 +3001,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -3026,15 +3026,15 @@
       <line>205</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1588 is 8 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x173704a8 is 8 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -3053,12 +3053,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -3078,15 +3078,15 @@
       <line>208</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1638 is 184 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x17370558 is 184 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -3105,12 +3105,12 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
 </error>
@@ -3138,15 +3138,15 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
-  <auxwhat>Address 0x4f9d1580 is 0 bytes inside a block of size 264 free'd</auxwhat>
+  <auxwhat>Address 0x173704a0 is 0 bytes inside a block of size 264 free'd</auxwhat>
   <stack>
     <frame>
       <ip>0x4C29730</ip>
@@ -3165,28 +3165,1049 @@
       <line>211</line>
     </frame>
     <frame>
-      <ip>0x40672E</ip>
+      <ip>0x4084D7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>637</line>
+      <line>812</line>
     </frame>
   </stack>
+</error>
+
+<error>
+  <unique>0x1f2</unique>
+  <tid>8</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x403297</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>curveBezierAux(Point2D*, int, Point2D*, Enemy*, bool)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>342</line>
+    </frame>
+    <frame>
+      <ip>0x4034FE</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>379</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000000 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x1f3</unique>
+  <tid>8</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x4032BC</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>curveBezierAux(Point2D*, int, Point2D*, Enemy*, bool)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>342</line>
+    </frame>
+    <frame>
+      <ip>0x4034FE</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>379</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000004 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x212</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x403503</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>380</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000008 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x213</unique>
+  <tid>8</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x40350A</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>380</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000000 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x214</unique>
+  <tid>8</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x403510</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>381</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000004 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x215</unique>
+  <tid>8</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 1</what>
+  <stack>
+    <frame>
+      <ip>0x40351B</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>382</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000024 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x216</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x4020F8</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>124</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000000 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x217</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x4020FE</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>124</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000008 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x218</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402133</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>127</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000004 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x219</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x40213A</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>127</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff00000c is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x21a</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402145</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>131</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000004 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x21b</unique>
+  <tid>8</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x40214F</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>131</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000004 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x21c</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x40225C</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>132</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000004 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x21d</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402263</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>132</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff00000c is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x21e</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402191</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>135</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000004 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x21f</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402198</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>135</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000028 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x220</unique>
+  <tid>8</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x4021A1</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>135</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000004 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x221</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x40224B</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>142</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000000 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x222</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402251</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>142</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000008 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x344</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402272</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>148</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff00000c is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x345</unique>
+  <tid>8</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402279</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>148</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000004 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x346</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402280</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>149</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000008 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x347</unique>
+  <tid>8</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x402287</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>149</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000000 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<error>
+  <unique>0x348</unique>
+  <tid>8</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x40228D</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>animacionEntrada(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>150</line>
+    </frame>
+    <frame>
+      <ip>0x403531</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>ColochoEnemyAux(void*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>384</line>
+    </frame>
+    <frame>
+      <ip>0x67620A3</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>start_thread</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>309</line>
+    </frame>
+    <frame>
+      <ip>0x727EC2C</ip>
+      <obj>/lib/x86_64-linux-gnu/libc-2.19.so</obj>
+      <fn>clone</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>111</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xfff000020 is not stack'd, malloc'd or (recently) free'd</auxwhat>
 </error>
 
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:05:01.093 </time>
+  <time>00:00:01:39.041 </time>
 </status>
 
 <error>
-  <unique>0x1d8</unique>
+  <unique>0x349</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>0 bytes in 1 blocks are definitely lost in loss record 1 of 439</text>
+    <leakedbytes>0</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2A5B0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>618</line>
+    </frame>
+    <frame>
+      <ip>0x5320B1D</ip>
+      <obj>/usr/lib/liballegro_audio.so.5.0.11</obj>
+      <fn>_al_kcm_mixer_rejig_sample_matrix</fn>
+      <dir>/home/melalonso/allegro/addons/audio</dir>
+      <file>kcm_mixer.c</file>
+      <line>158</line>
+    </frame>
+    <frame>
+      <ip>0x5321062</ip>
+      <obj>/usr/lib/liballegro_audio.so.5.0.11</obj>
+      <fn>al_attach_sample_instance_to_mixer</fn>
+      <dir>/home/melalonso/allegro/addons/audio</dir>
+      <file>kcm_mixer.c</file>
+      <line>777</line>
+    </frame>
+    <frame>
+      <ip>0x4056E0</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>main</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>main.c</file>
+      <line>115</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x352</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>8 bytes in 1 blocks are possibly lost in loss record 8 of 406</text>
+    <text>8 bytes in 1 blocks are possibly lost in loss record 10 of 439</text>
     <leakedbytes>8</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3254,17 +4275,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x1d9</unique>
+  <unique>0x353</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>8 bytes in 1 blocks are possibly lost in loss record 9 of 406</text>
+    <text>8 bytes in 1 blocks are possibly lost in loss record 11 of 439</text>
     <leakedbytes>8</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3341,11 +4362,11 @@
 </error>
 
 <error>
-  <unique>0x1da</unique>
+  <unique>0x354</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>8 bytes in 1 blocks are possibly lost in loss record 10 of 406</text>
+    <text>8 bytes in 1 blocks are possibly lost in loss record 12 of 439</text>
     <leakedbytes>8</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3422,11 +4443,11 @@
 </error>
 
 <error>
-  <unique>0x1db</unique>
+  <unique>0x355</unique>
   <tid>1</tid>
   <kind>Leak_DefinitelyLost</kind>
   <xwhat>
-    <text>8 bytes in 1 blocks are definitely lost in loss record 11 of 406</text>
+    <text>8 bytes in 1 blocks are definitely lost in loss record 13 of 439</text>
     <leakedbytes>8</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3464,22 +4485,22 @@
       <line>53</line>
     </frame>
     <frame>
-      <ip>0x403BD6</ip>
+      <ip>0x405552</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>54</line>
+      <line>74</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x1dc</unique>
+  <unique>0x357</unique>
   <tid>1</tid>
   <kind>Leak_DefinitelyLost</kind>
   <xwhat>
-    <text>10 bytes in 1 blocks are definitely lost in loss record 12 of 406</text>
+    <text>10 bytes in 1 blocks are definitely lost in loss record 15 of 439</text>
     <leakedbytes>10</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3517,22 +4538,22 @@
       <line>95</line>
     </frame>
     <frame>
-      <ip>0x403BD6</ip>
+      <ip>0x405552</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>54</line>
+      <line>74</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x1dd</unique>
+  <unique>0x358</unique>
   <tid>1</tid>
   <kind>Leak_DefinitelyLost</kind>
   <xwhat>
-    <text>10 bytes in 1 blocks are definitely lost in loss record 13 of 406</text>
+    <text>10 bytes in 1 blocks are definitely lost in loss record 16 of 439</text>
     <leakedbytes>10</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3570,22 +4591,22 @@
       <line>95</line>
     </frame>
     <frame>
-      <ip>0x403BD6</ip>
+      <ip>0x405552</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>54</line>
+      <line>74</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x214</unique>
+  <unique>0x391</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 68 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 73 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3644,20 +4665,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x215</unique>
+  <unique>0x392</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 69 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 74 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3724,17 +4745,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x216</unique>
+  <unique>0x393</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 70 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 75 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3793,20 +4814,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x217</unique>
+  <unique>0x394</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 71 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 76 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3873,17 +4894,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x218</unique>
+  <unique>0x395</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 72 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 77 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -3942,20 +4963,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x219</unique>
+  <unique>0x396</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 73 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 78 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4022,17 +5043,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x21a</unique>
+  <unique>0x397</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 74 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 79 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4091,20 +5112,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x21b</unique>
+  <unique>0x398</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 75 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 80 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4171,17 +5192,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x21c</unique>
+  <unique>0x399</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 76 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 81 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4240,20 +5261,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x21d</unique>
+  <unique>0x39a</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 77 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 82 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4320,17 +5341,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x21e</unique>
+  <unique>0x39b</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 78 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 83 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4389,20 +5410,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x21f</unique>
+  <unique>0x39c</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 79 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 84 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4469,17 +5490,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x220</unique>
+  <unique>0x39d</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 80 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 85 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4538,20 +5559,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x221</unique>
+  <unique>0x39e</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 81 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 86 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4618,17 +5639,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x222</unique>
+  <unique>0x39f</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 82 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 87 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4687,20 +5708,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x223</unique>
+  <unique>0x3a0</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 83 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 88 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4767,17 +5788,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x224</unique>
+  <unique>0x3a1</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 84 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 89 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4836,20 +5857,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x225</unique>
+  <unique>0x3a2</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 85 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 90 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4916,17 +5937,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x226</unique>
+  <unique>0x3a3</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 86 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 91 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -4985,20 +6006,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x227</unique>
+  <unique>0x3a4</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 87 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 92 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5065,17 +6086,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x228</unique>
+  <unique>0x3a5</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 88 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 93 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5134,20 +6155,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x229</unique>
+  <unique>0x3a6</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 89 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 94 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5214,17 +6235,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x22a</unique>
+  <unique>0x3a7</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 90 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 95 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5283,20 +6304,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x22b</unique>
+  <unique>0x3a8</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 91 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 96 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5363,17 +6384,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x22c</unique>
+  <unique>0x3a9</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 92 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 97 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5432,20 +6453,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x22d</unique>
+  <unique>0x3aa</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 93 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 98 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5512,17 +6533,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x22e</unique>
+  <unique>0x3ab</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 94 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 99 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5581,20 +6602,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x22f</unique>
+  <unique>0x3ac</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 95 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 100 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5661,17 +6682,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x230</unique>
+  <unique>0x3ad</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 96 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 101 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5730,20 +6751,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x231</unique>
+  <unique>0x3ae</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 97 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 102 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5810,17 +6831,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x232</unique>
+  <unique>0x3af</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 98 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 103 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5879,20 +6900,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x233</unique>
+  <unique>0x3b0</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 99 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 104 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -5959,17 +6980,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x234</unique>
+  <unique>0x3b1</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 100 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 105 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6028,20 +7049,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x235</unique>
+  <unique>0x3b2</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 101 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 106 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6108,17 +7129,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x236</unique>
+  <unique>0x3b3</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 102 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 107 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6177,20 +7198,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x237</unique>
+  <unique>0x3b4</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 103 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 108 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6257,17 +7278,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x238</unique>
+  <unique>0x3b5</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 104 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 109 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6326,20 +7347,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x239</unique>
+  <unique>0x3b6</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>16 bytes in 1 blocks are possibly lost in loss record 105 of 406</text>
+    <text>16 bytes in 1 blocks are possibly lost in loss record 110 of 439</text>
     <leakedbytes>16</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6406,17 +7427,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x245</unique>
+  <unique>0x3c7</unique>
   <tid>1</tid>
   <kind>Leak_DefinitelyLost</kind>
   <xwhat>
-    <text>32 bytes in 1 blocks are definitely lost in loss record 117 of 406</text>
+    <text>32 bytes in 1 blocks are definitely lost in loss record 127 of 439</text>
     <leakedbytes>32</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6458,22 +7479,22 @@
       <line>53</line>
     </frame>
     <frame>
-      <ip>0x403BD6</ip>
+      <ip>0x405552</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>54</line>
+      <line>74</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2ad</unique>
+  <unique>0x444</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 221 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 252 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6532,20 +7553,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2ae</unique>
+  <unique>0x445</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 222 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 253 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6604,20 +7625,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2af</unique>
+  <unique>0x446</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 223 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 254 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6676,20 +7697,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b0</unique>
+  <unique>0x447</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 224 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 255 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6748,20 +7769,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b1</unique>
+  <unique>0x448</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 225 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 256 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6820,20 +7841,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b2</unique>
+  <unique>0x449</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 226 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 257 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6892,20 +7913,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b3</unique>
+  <unique>0x44a</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 227 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 258 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -6964,20 +7985,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b4</unique>
+  <unique>0x44b</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 228 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 259 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7036,20 +8057,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b5</unique>
+  <unique>0x44c</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 229 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 260 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7108,20 +8129,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b6</unique>
+  <unique>0x44d</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 230 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 261 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7180,20 +8201,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b7</unique>
+  <unique>0x44e</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 231 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 262 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7252,20 +8273,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b8</unique>
+  <unique>0x44f</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 232 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 263 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7324,20 +8345,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2b9</unique>
+  <unique>0x450</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 233 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 264 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7396,20 +8417,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2ba</unique>
+  <unique>0x451</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>76 bytes in 1 blocks are possibly lost in loss record 234 of 406</text>
+    <text>76 bytes in 1 blocks are possibly lost in loss record 265 of 439</text>
     <leakedbytes>76</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7468,20 +8489,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2d5</unique>
+  <unique>0x470</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>90 bytes in 1 blocks are possibly lost in loss record 261 of 406</text>
+    <text>90 bytes in 1 blocks are possibly lost in loss record 296 of 439</text>
     <leakedbytes>90</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7540,20 +8561,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2f2</unique>
+  <unique>0x48d</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 290 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 325 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7607,20 +8628,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2f3</unique>
+  <unique>0x48e</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 291 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 326 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7674,20 +8695,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2f4</unique>
+  <unique>0x48f</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 292 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 327 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7750,17 +8771,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2f5</unique>
+  <unique>0x490</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 293 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 328 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7823,17 +8844,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2f6</unique>
+  <unique>0x491</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 294 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 329 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7896,17 +8917,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2f7</unique>
+  <unique>0x492</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 295 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 330 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -7969,17 +8990,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2f8</unique>
+  <unique>0x493</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 296 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 331 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8042,17 +9063,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2f9</unique>
+  <unique>0x494</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 297 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 332 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8115,17 +9136,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2fa</unique>
+  <unique>0x495</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 298 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 333 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8188,17 +9209,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2fb</unique>
+  <unique>0x496</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 299 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 334 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8261,17 +9282,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2fc</unique>
+  <unique>0x497</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 300 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 335 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8334,17 +9355,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2fd</unique>
+  <unique>0x498</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 301 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 336 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8407,17 +9428,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2fe</unique>
+  <unique>0x499</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 302 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 337 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8480,17 +9501,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x2ff</unique>
+  <unique>0x49a</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 303 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 338 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8553,17 +9574,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x300</unique>
+  <unique>0x49b</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 304 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 339 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8626,17 +9647,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x301</unique>
+  <unique>0x49c</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 305 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 340 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8699,17 +9720,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x302</unique>
+  <unique>0x49d</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 306 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 341 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8772,17 +9793,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x303</unique>
+  <unique>0x49e</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 307 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 342 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8845,17 +9866,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x304</unique>
+  <unique>0x49f</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 308 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 343 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8918,17 +9939,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x305</unique>
+  <unique>0x4a0</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 309 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 344 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -8991,17 +10012,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x306</unique>
+  <unique>0x4a1</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>96 bytes in 1 blocks are possibly lost in loss record 310 of 406</text>
+    <text>96 bytes in 1 blocks are possibly lost in loss record 345 of 439</text>
     <leakedbytes>96</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9064,17 +10085,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x308</unique>
+  <unique>0x4a3</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>130 bytes in 1 blocks are possibly lost in loss record 312 of 406</text>
+    <text>130 bytes in 1 blocks are possibly lost in loss record 347 of 439</text>
     <leakedbytes>130</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9124,20 +10145,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x309</unique>
+  <unique>0x4a4</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>132 bytes in 1 blocks are possibly lost in loss record 313 of 406</text>
+    <text>132 bytes in 1 blocks are possibly lost in loss record 348 of 439</text>
     <leakedbytes>132</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9196,20 +10217,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x30a</unique>
+  <unique>0x4a5</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>132 bytes in 1 blocks are possibly lost in loss record 314 of 406</text>
+    <text>132 bytes in 1 blocks are possibly lost in loss record 349 of 439</text>
     <leakedbytes>132</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9268,20 +10289,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x30d</unique>
+  <unique>0x4a8</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>148 bytes in 1 blocks are possibly lost in loss record 317 of 406</text>
+    <text>148 bytes in 1 blocks are possibly lost in loss record 352 of 439</text>
     <leakedbytes>148</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9340,20 +10361,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x30e</unique>
+  <unique>0x4a9</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>148 bytes in 1 blocks are possibly lost in loss record 318 of 406</text>
+    <text>148 bytes in 1 blocks are possibly lost in loss record 353 of 439</text>
     <leakedbytes>148</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9412,20 +10433,20 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B6D</ip>
+      <ip>0xFFF000B05</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x31b</unique>
+  <unique>0x4b7</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>184 bytes in 1 blocks are possibly lost in loss record 331 of 406</text>
+    <text>184 bytes in 1 blocks are possibly lost in loss record 367 of 439</text>
     <leakedbytes>184</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9489,17 +10510,17 @@
       <ip>0x1</ip>
     </frame>
     <frame>
-      <ip>0xFFF000B42</ip>
+      <ip>0xFFF000ADA</ip>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x31c</unique>
+  <unique>0x4b8</unique>
   <tid>1</tid>
   <kind>Leak_DefinitelyLost</kind>
   <xwhat>
-    <text>192 (16 direct, 176 indirect) bytes in 1 blocks are definitely lost in loss record 332 of 406</text>
+    <text>192 (16 direct, 176 indirect) bytes in 1 blocks are definitely lost in loss record 368 of 439</text>
     <leakedbytes>192</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9566,22 +10587,22 @@
       <line>95</line>
     </frame>
     <frame>
-      <ip>0x403BD6</ip>
+      <ip>0x405552</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>54</line>
+      <line>74</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x31d</unique>
+  <unique>0x4b9</unique>
   <tid>1</tid>
   <kind>Leak_DefinitelyLost</kind>
   <xwhat>
-    <text>192 (16 direct, 176 indirect) bytes in 1 blocks are definitely lost in loss record 333 of 406</text>
+    <text>192 (16 direct, 176 indirect) bytes in 1 blocks are definitely lost in loss record 369 of 439</text>
     <leakedbytes>192</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9643,22 +10664,22 @@
       <line>135</line>
     </frame>
     <frame>
-      <ip>0x403BF0</ip>
+      <ip>0x40556C</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>62</line>
+      <line>82</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x327</unique>
+  <unique>0x4c4</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>416 bytes in 1 blocks are possibly lost in loss record 343 of 406</text>
+    <text>416 bytes in 1 blocks are possibly lost in loss record 380 of 439</text>
     <leakedbytes>416</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9696,30 +10717,30 @@
       <line>589</line>
     </frame>
     <frame>
-      <ip>0x403AE0</ip>
+      <ip>0x403ECE</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>iniciarTempo()</fn>
+      <fn>BossEnemy(Enemy*, int, SpaceShip*)</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>objects.c</file>
-      <line>437</line>
+      <line>579</line>
     </frame>
     <frame>
-      <ip>0x405642</ip>
+      <ip>0x40672D</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>416</line>
+      <line>395</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x328</unique>
+  <unique>0x4c5</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>416 bytes in 1 blocks are possibly lost in loss record 344 of 406</text>
+    <text>416 bytes in 1 blocks are possibly lost in loss record 381 of 439</text>
     <leakedbytes>416</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9757,91 +10778,30 @@
       <line>589</line>
     </frame>
     <frame>
-      <ip>0x402F14</ip>
+      <ip>0x403C21</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
+      <fn>KamiDispaEnemy(Enemy*, int, SpaceShip*)</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>objects.c</file>
-      <line>302</line>
+      <line>519</line>
     </frame>
     <frame>
-      <ip>0x405EB0</ip>
+      <ip>0x406838</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>523</line>
+      <line>407</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x329</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>416 bytes in 1 blocks are possibly lost in loss record 345 of 406</text>
-    <leakedbytes>416</leakedbytes>
-    <leakedblocks>1</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402F14</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>302</line>
-    </frame>
-    <frame>
-      <ip>0x405ECE</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>524</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x332</unique>
+  <unique>0x4cf</unique>
   <tid>1</tid>
   <kind>Leak_DefinitelyLost</kind>
   <xwhat>
-    <text>640 bytes in 1 blocks are definitely lost in loss record 354 of 406</text>
+    <text>640 bytes in 1 blocks are definitely lost in loss record 391 of 439</text>
     <leakedbytes>640</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -9889,22 +10849,22 @@
       <line>53</line>
     </frame>
     <frame>
-      <ip>0x403BD6</ip>
+      <ip>0x405552</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>54</line>
+      <line>74</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x335</unique>
+  <unique>0x4d2</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>832 bytes in 2 blocks are possibly lost in loss record 357 of 406</text>
+    <text>832 bytes in 2 blocks are possibly lost in loss record 394 of 439</text>
     <leakedbytes>832</leakedbytes>
     <leakedblocks>2</leakedblocks>
   </xwhat>
@@ -9942,32 +10902,32 @@
       <line>589</line>
     </frame>
     <frame>
-      <ip>0x402FC1</ip>
+      <ip>0x404A5B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
+      <fn>CollideEnemiesSpaceship(Enemy*, int, SpaceShip&amp;)</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>objects.c</file>
-      <line>304</line>
+      <line>703</line>
     </frame>
     <frame>
-      <ip>0x405E92</ip>
+      <ip>0x406962</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>522</line>
+      <line>422</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x336</unique>
+  <unique>0x4e9</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>832 bytes in 2 blocks are possibly lost in loss record 358 of 406</text>
-    <leakedbytes>832</leakedbytes>
-    <leakedblocks>2</leakedblocks>
+    <text>2,912 bytes in 7 blocks are possibly lost in loss record 417 of 439</text>
+    <leakedbytes>2912</leakedbytes>
+    <leakedblocks>7</leakedblocks>
   </xwhat>
   <stack>
     <frame>
@@ -10003,579 +10963,30 @@
       <line>589</line>
     </frame>
     <frame>
-      <ip>0x402F14</ip>
+      <ip>0x404A5B</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
+      <fn>CollideEnemiesSpaceship(Enemy*, int, SpaceShip&amp;)</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>objects.c</file>
-      <line>302</line>
+      <line>703</line>
     </frame>
     <frame>
-      <ip>0x405E92</ip>
+      <ip>0x406998</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>522</line>
+      <line>424</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x341</unique>
+  <unique>0x4eb</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>1,248 bytes in 3 blocks are possibly lost in loss record 369 of 406</text>
-    <leakedbytes>1248</leakedbytes>
-    <leakedblocks>3</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402F14</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>302</line>
-    </frame>
-    <frame>
-      <ip>0x405EEC</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>525</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x342</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>1,248 bytes in 3 blocks are possibly lost in loss record 370 of 406</text>
-    <leakedbytes>1248</leakedbytes>
-    <leakedblocks>3</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402F6C</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>303</line>
-    </frame>
-    <frame>
-      <ip>0x405EEC</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>525</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x343</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>1,664 bytes in 4 blocks are possibly lost in loss record 371 of 406</text>
-    <leakedbytes>1664</leakedbytes>
-    <leakedblocks>4</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402E6E</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>298</line>
-    </frame>
-    <frame>
-      <ip>0x404EEE</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>349</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x344</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>1,664 bytes in 4 blocks are possibly lost in loss record 372 of 406</text>
-    <leakedbytes>1664</leakedbytes>
-    <leakedblocks>4</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402F6C</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>303</line>
-    </frame>
-    <frame>
-      <ip>0x405EB0</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>523</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x345</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>1,664 bytes in 4 blocks are possibly lost in loss record 373 of 406</text>
-    <leakedbytes>1664</leakedbytes>
-    <leakedblocks>4</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402F6C</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>303</line>
-    </frame>
-    <frame>
-      <ip>0x405ECE</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>524</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x346</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>1,664 bytes in 4 blocks are possibly lost in loss record 374 of 406</text>
-    <leakedbytes>1664</leakedbytes>
-    <leakedblocks>4</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402FC1</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>304</line>
-    </frame>
-    <frame>
-      <ip>0x405EEC</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>525</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x351</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>2,080 bytes in 5 blocks are possibly lost in loss record 385 of 406</text>
-    <leakedbytes>2080</leakedbytes>
-    <leakedblocks>5</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402FC1</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>304</line>
-    </frame>
-    <frame>
-      <ip>0x405EB0</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>523</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x352</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>2,080 bytes in 5 blocks are possibly lost in loss record 386 of 406</text>
-    <leakedbytes>2080</leakedbytes>
-    <leakedblocks>5</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402FC1</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>304</line>
-    </frame>
-    <frame>
-      <ip>0x405ECE</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>524</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x353</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>2,496 bytes in 6 blocks are possibly lost in loss record 387 of 406</text>
-    <leakedbytes>2496</leakedbytes>
-    <leakedblocks>6</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402F6C</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>303</line>
-    </frame>
-    <frame>
-      <ip>0x405E92</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>522</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x356</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>3,328 bytes in 8 blocks are possibly lost in loss record 390 of 406</text>
+    <text>3,328 bytes in 8 blocks are possibly lost in loss record 419 of 439</text>
     <leakedbytes>3328</leakedbytes>
     <leakedblocks>8</leakedblocks>
   </xwhat>
@@ -10613,30 +11024,30 @@
       <line>589</line>
     </frame>
     <frame>
-      <ip>0x402E6E</ip>
+      <ip>0x403FC7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>objects.c</file>
-      <line>298</line>
+      <line>590</line>
     </frame>
     <frame>
-      <ip>0x404ED0</ip>
+      <ip>0x406AFB</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>348</line>
+      <line>446</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x357</unique>
+  <unique>0x4ec</unique>
   <tid>1</tid>
   <kind>Leak_DefinitelyLost</kind>
   <xwhat>
-    <text>3,336 (208 direct, 3,128 indirect) bytes in 1 blocks are definitely lost in loss record 391 of 406</text>
+    <text>3,336 (208 direct, 3,128 indirect) bytes in 1 blocks are definitely lost in loss record 420 of 439</text>
     <leakedbytes>3336</leakedbytes>
     <leakedblocks>1</leakedblocks>
   </xwhat>
@@ -10686,24 +11097,24 @@
       <line>53</line>
     </frame>
     <frame>
-      <ip>0x403BD6</ip>
+      <ip>0x405552</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>54</line>
+      <line>74</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x35b</unique>
+  <unique>0x4f5</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>4,160 bytes in 10 blocks are possibly lost in loss record 395 of 406</text>
-    <leakedbytes>4160</leakedbytes>
-    <leakedblocks>10</leakedblocks>
+    <text>4,576 bytes in 11 blocks are possibly lost in loss record 429 of 439</text>
+    <leakedbytes>4576</leakedbytes>
+    <leakedblocks>11</leakedblocks>
   </xwhat>
   <stack>
     <frame>
@@ -10739,274 +11150,30 @@
       <line>589</line>
     </frame>
     <frame>
-      <ip>0x402E6E</ip>
+      <ip>0x403ADD</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
+      <fn>ColochoEnemy(Enemy*, int, SpaceShip*)</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>objects.c</file>
-      <line>298</line>
+      <line>499</line>
     </frame>
     <frame>
-      <ip>0x405979</ip>
+      <ip>0x4067F5</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>481</line>
+      <line>404</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x35c</unique>
+  <unique>0x4f7</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>4,160 bytes in 10 blocks are possibly lost in loss record 396 of 406</text>
-    <leakedbytes>4160</leakedbytes>
-    <leakedblocks>10</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402E6E</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>298</line>
-    </frame>
-    <frame>
-      <ip>0x405997</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>482</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x35d</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>4,160 bytes in 10 blocks are possibly lost in loss record 397 of 406</text>
-    <leakedbytes>4160</leakedbytes>
-    <leakedblocks>10</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402E6E</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>298</line>
-    </frame>
-    <frame>
-      <ip>0x4059B5</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>483</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x35e</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>4,160 bytes in 10 blocks are possibly lost in loss record 398 of 406</text>
-    <leakedbytes>4160</leakedbytes>
-    <leakedblocks>10</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402E6E</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>298</line>
-    </frame>
-    <frame>
-      <ip>0x4059D3</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>484</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x360</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>4,992 bytes in 12 blocks are possibly lost in loss record 400 of 406</text>
-    <leakedbytes>4992</leakedbytes>
-    <leakedblocks>12</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x402E6E</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>298</line>
-    </frame>
-    <frame>
-      <ip>0x404EB2</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>347</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x361</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>6,656 bytes in 16 blocks are possibly lost in loss record 401 of 406</text>
+    <text>6,656 bytes in 16 blocks are possibly lost in loss record 431 of 439</text>
     <leakedbytes>6656</leakedbytes>
     <leakedblocks>16</leakedblocks>
   </xwhat>
@@ -11044,32 +11211,32 @@
       <line>589</line>
     </frame>
     <frame>
-      <ip>0x402E6E</ip>
+      <ip>0x403FC7</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>objects.c</file>
-      <line>298</line>
+      <line>590</line>
     </frame>
     <frame>
-      <ip>0x404E94</ip>
+      <ip>0x406ADD</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>346</line>
+      <line>445</line>
     </frame>
   </stack>
 </error>
 
 <error>
-  <unique>0x363</unique>
+  <unique>0x4f9</unique>
   <tid>1</tid>
   <kind>Leak_PossiblyLost</kind>
   <xwhat>
-    <text>8,320 bytes in 20 blocks are possibly lost in loss record 403 of 406</text>
-    <leakedbytes>8320</leakedbytes>
-    <leakedblocks>20</leakedblocks>
+    <text>8,736 bytes in 21 blocks are possibly lost in loss record 433 of 439</text>
+    <leakedbytes>8736</leakedbytes>
+    <leakedblocks>21</leakedblocks>
   </xwhat>
   <stack>
     <frame>
@@ -11105,86 +11272,365 @@
       <line>589</line>
     </frame>
     <frame>
-      <ip>0x402E6E</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>objects.c</file>
-      <line>298</line>
-    </frame>
-    <frame>
-      <ip>0x404E76</ip>
-      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
-      <fn>main</fn>
-      <dir>/home/melalonso/GALAGA</dir>
-      <file>main.c</file>
-      <line>345</line>
-    </frame>
-  </stack>
-</error>
-
-<error>
-  <unique>0x364</unique>
-  <tid>1</tid>
-  <kind>Leak_PossiblyLost</kind>
-  <xwhat>
-    <text>13,728 bytes in 33 blocks are possibly lost in loss record 404 of 406</text>
-    <leakedbytes>13728</leakedbytes>
-    <leakedblocks>33</leakedblocks>
-  </xwhat>
-  <stack>
-    <frame>
-      <ip>0x4C2A5B0</ip>
-      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
-      <fn>calloc</fn>
-      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
-      <file>vg_replace_malloc.c</file>
-      <line>618</line>
-    </frame>
-    <frame>
-      <ip>0x4010FD1</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>allocate_dtv</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>296</line>
-    </frame>
-    <frame>
-      <ip>0x40116DD</ip>
-      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
-      <fn>_dl_allocate_tls</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
-      <file>dl-tls.c</file>
-      <line>460</line>
-    </frame>
-    <frame>
-      <ip>0x6762C27</ip>
-      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
-      <fn>pthread_create@@GLIBC_2.2.5</fn>
-      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
-      <file>allocatestack.c</file>
-      <line>589</line>
-    </frame>
-    <frame>
-      <ip>0x403221</ip>
+      <ip>0x404237</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>ShooterEnemy(Enemy*, int)</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>objects.c</file>
-      <line>343</line>
+      <line>619</line>
     </frame>
     <frame>
-      <ip>0x404D3E</ip>
+      <ip>0x406769</ip>
       <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
       <fn>main</fn>
       <dir>/home/melalonso/GALAGA</dir>
       <file>main.c</file>
-      <line>320</line>
+      <line>398</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4fa</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>9,152 bytes in 22 blocks are possibly lost in loss record 434 of 439</text>
+    <leakedbytes>9152</leakedbytes>
+    <leakedblocks>22</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2A5B0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>618</line>
+    </frame>
+    <frame>
+      <ip>0x4010FD1</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
+      <fn>allocate_dtv</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
+      <file>dl-tls.c</file>
+      <line>296</line>
+    </frame>
+    <frame>
+      <ip>0x40116DD</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
+      <fn>_dl_allocate_tls</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
+      <file>dl-tls.c</file>
+      <line>460</line>
+    </frame>
+    <frame>
+      <ip>0x6762C27</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>pthread_create@@GLIBC_2.2.5</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>allocatestack.c</file>
+      <line>589</line>
+    </frame>
+    <frame>
+      <ip>0x403999</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>KamikaseEnemy(Enemy*, int, SpaceShip*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x4067AF</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>main</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>main.c</file>
+      <line>401</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4fb</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>9,984 bytes in 24 blocks are possibly lost in loss record 435 of 439</text>
+    <leakedbytes>9984</leakedbytes>
+    <leakedblocks>24</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2A5B0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>618</line>
+    </frame>
+    <frame>
+      <ip>0x4010FD1</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
+      <fn>allocate_dtv</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
+      <file>dl-tls.c</file>
+      <line>296</line>
+    </frame>
+    <frame>
+      <ip>0x40116DD</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
+      <fn>_dl_allocate_tls</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
+      <file>dl-tls.c</file>
+      <line>460</line>
+    </frame>
+    <frame>
+      <ip>0x6762C27</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>pthread_create@@GLIBC_2.2.5</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>allocatestack.c</file>
+      <line>589</line>
+    </frame>
+    <frame>
+      <ip>0x403FC7</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>590</line>
+    </frame>
+    <frame>
+      <ip>0x406ABF</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>main</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>main.c</file>
+      <line>444</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4fc</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>13,312 bytes in 32 blocks are possibly lost in loss record 436 of 439</text>
+    <leakedbytes>13312</leakedbytes>
+    <leakedblocks>32</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2A5B0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>618</line>
+    </frame>
+    <frame>
+      <ip>0x4010FD1</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
+      <fn>allocate_dtv</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
+      <file>dl-tls.c</file>
+      <line>296</line>
+    </frame>
+    <frame>
+      <ip>0x40116DD</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
+      <fn>_dl_allocate_tls</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
+      <file>dl-tls.c</file>
+      <line>460</line>
+    </frame>
+    <frame>
+      <ip>0x6762C27</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>pthread_create@@GLIBC_2.2.5</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>allocatestack.c</file>
+      <line>589</line>
+    </frame>
+    <frame>
+      <ip>0x403FC7</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>590</line>
+    </frame>
+    <frame>
+      <ip>0x406AA1</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>main</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>main.c</file>
+      <line>443</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4ff</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>16,640 bytes in 40 blocks are possibly lost in loss record 439 of 439</text>
+    <leakedbytes>16640</leakedbytes>
+    <leakedblocks>40</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2A5B0</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+      <dir>/mnt/valgrind-3.9.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>618</line>
+    </frame>
+    <frame>
+      <ip>0x4010FD1</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
+      <fn>allocate_dtv</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
+      <file>dl-tls.c</file>
+      <line>296</line>
+    </frame>
+    <frame>
+      <ip>0x40116DD</ip>
+      <obj>/lib/x86_64-linux-gnu/ld-2.19.so</obj>
+      <fn>_dl_allocate_tls</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/elf</dir>
+      <file>dl-tls.c</file>
+      <line>460</line>
+    </frame>
+    <frame>
+      <ip>0x6762C27</ip>
+      <obj>/lib/x86_64-linux-gnu/libpthread-2.19.so</obj>
+      <fn>pthread_create@@GLIBC_2.2.5</fn>
+      <dir>/home/aurel32/glibc/glibc-2.19/nptl</dir>
+      <file>allocatestack.c</file>
+      <line>589</line>
+    </frame>
+    <frame>
+      <ip>0x403FC7</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>movEnemies(Enemy*, int, int, SpaceShip*)</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>objects.c</file>
+      <line>590</line>
+    </frame>
+    <frame>
+      <ip>0x406A83</ip>
+      <obj>/home/melalonso/GALAGA/bin/Debug/Allegrito</obj>
+      <fn>main</fn>
+      <dir>/home/melalonso/GALAGA</dir>
+      <file>main.c</file>
+      <line>442</line>
     </frame>
   </stack>
 </error>
 
 <errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x348</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x347</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x346</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x345</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x344</unique>
+  </pair>
+  <pair>
+    <count>43</count>
+    <unique>0x21d</unique>
+  </pair>
+  <pair>
+    <count>43</count>
+    <unique>0x21c</unique>
+  </pair>
+  <pair>
+    <count>42</count>
+    <unique>0x222</unique>
+  </pair>
+  <pair>
+    <count>42</count>
+    <unique>0x221</unique>
+  </pair>
+  <pair>
+    <count>42</count>
+    <unique>0x220</unique>
+  </pair>
+  <pair>
+    <count>42</count>
+    <unique>0x21f</unique>
+  </pair>
+  <pair>
+    <count>42</count>
+    <unique>0x21e</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x21b</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x21a</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x219</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x218</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x217</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x216</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x215</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x214</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x213</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x212</unique>
+  </pair>
+  <pair>
+    <count>16</count>
+    <unique>0x1f3</unique>
+  </pair>
+  <pair>
+    <count>16</count>
+    <unique>0x1f2</unique>
+  </pair>
   <pair>
     <count>9</count>
     <unique>0x39</unique>
@@ -11230,135 +11676,135 @@
     <unique>0x2f</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x2e</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x2d</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x2c</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x2b</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x2a</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x29</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x28</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x27</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x26</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x25</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x24</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x23</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x22</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x21</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x20</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x1f</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x1e</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x1d</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x1c</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x1b</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x1a</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x19</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x18</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x17</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x16</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x15</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x14</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x13</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x12</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x11</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0x10</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0xf</unique>
   </pair>
   <pair>
-    <count>8</count>
+    <count>9</count>
     <unique>0xe</unique>
   </pair>
   <pair>

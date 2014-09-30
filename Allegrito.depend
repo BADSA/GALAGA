@@ -134,15 +134,16 @@
 1411778572 /home/sd/Documents/Lenguajes/GALAGA/objects.c
 	"main.h"
 
-1411899244 source:/home/melalonso/GALAGA/main.c
+1412055501 source:/home/melalonso/GALAGA/main.c
 	"main.h"
 	"objects.c"
 
-1411897475 /home/melalonso/GALAGA/main.h
+1412048375 /home/melalonso/GALAGA/main.h
 	<stdio.h>
 	<pthread.h>
+	<signal.h>
 	<unistd.h>
-	<cmath>
+	<math.h>
 	<allegro.h>
 	<allegro_image.h>
 	<allegro_native_dialog.h>
@@ -155,7 +156,7 @@
 
 1411898600 /home/melalonso/GALAGA/objects.h
 
-1411899268 /home/melalonso/GALAGA/objects.c
+1412044786 /home/melalonso/GALAGA/objects.c
 	"main.h"
 
 1410809739 /usr/include/allegro5//allegro_acodec.h
